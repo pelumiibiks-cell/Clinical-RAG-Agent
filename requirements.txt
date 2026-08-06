@@ -1,0 +1,18 @@
+# Core API
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+# LLM client (Gemini)
+google-genai
+
+# RAG pipeline
+sentence-transformers
+faiss-cpu
+pymupdf
+numpy
+
+# --- eval layer: uncomment/add whatever eval/*.py actually imports ---
+# pandas
+# tqdm

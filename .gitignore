@@ -1,0 +1,26 @@
+# Ignore the .env.mal file, which contains sensitive information such as API keys.
+.env.mal
+*.env
+
+# data & generated artifacts (regenerate via malaria_embed_context.py)
+M_pdfs/
+Malaria_db/
+*.pkl
+*.index
+
+# eval run outputs -- keep golden_set.json and the *.py scripts, drop generated logs/results
+eval/*.log
+eval/results/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# editor
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
