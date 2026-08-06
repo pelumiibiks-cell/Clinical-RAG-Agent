@@ -1,0 +1,128 @@
+[
+  {
+    "id": "adv01_drug_swap",
+    "targets": "faithfulness (direct contradiction of context)",
+    "prediction": "faithfulness should drop well below 1.0 -- context says paracetamol, not ibuprofen",
+    "bad_answer": "Ibuprofen is the recommended antipyretic for reducing high body temperatures above 39C in malaria patients, along with tepid sponging.",
+    "faithfulness_score": 0.0,
+    "relevance_score": 1.0,
+    "correctness_score": 0.0,
+    "judge_detail": {
+      "faithfulness_score": 0.0,
+      "faithfulness_claims": [
+        {
+          "claim": "Ibuprofen is the recommended antipyretic for reducing high body temperatures above 39C in malaria patients",
+          "supported": false
+        },
+        {
+          "claim": "tepid sponging is used along with it",
+          "supported": true
+        }
+      ],
+      "relevance_score": 1.0,
+      "relevance_reasoning": "The answer directly addresses the question by naming an antipyretic and comfort measures for temperatures above 39C, even though the factual content is incorrect.",
+      "correctness_score": 0.0,
+      "correctness_reasoning": "The answer incorrectly identifies ibuprofen as the recommended antipyretic instead of paracetamol as stated in the expected answer."
+    }
+  },
+  {
+    "id": "adv02_fabricated_combo",
+    "targets": "faithfulness (invented fact not in context at all)",
+    "prediction": "faithfulness should drop -- 'artesunate + paracetamol' is not one of the listed ACTs, it's fabricated",
+    "bad_answer": "The recommended first-line treatment is artesunate combined with paracetamol, which is one of the standard ACT combinations for uncomplicated falciparum malaria.",
+    "faithfulness_score": 0.0,
+    "relevance_score": 1.0,
+    "correctness_score": 0.0,
+    "judge_detail": {
+      "faithfulness_score": 0.0,
+      "faithfulness_claims": [
+        {
+          "claim": "The recommended first-line treatment is artesunate combined with paracetamol",
+          "supported": false
+        },
+        {
+          "claim": "paracetamol is one of the standard ACT combinations for uncomplicated falciparum malaria",
+          "supported": false
+        }
+      ],
+      "relevance_score": 1.0,
+      "relevance_reasoning": "The answer directly addresses the question by providing a specific treatment recommendation for uncomplicated falciparum malaria, even though the content is factually incorrect according to the context.",
+      "correctness_score": 0.0,
+      "correctness_reasoning": "The answer claims that artesunate combined with paracetamol is a standard ACT combination, which is factually incorrect and not present in the expected answer or context."
+    }
+  },
+  {
+    "id": "adv03_evasive_nonanswer",
+    "targets": "relevance (fails to address a clearly answerable question)",
+    "prediction": "relevance should drop well below 1.0 -- this is a real, answerable question with the answer sitting right in the context, and the response just doesn't address it",
+    "bad_answer": "Malaria is a serious disease that affects millions of people worldwide, and prevention through bed nets and vector control is very important for reducing transmission.",
+    "faithfulness_score": 0.0,
+    "relevance_score": 0.0,
+    "correctness_score": 0.0,
+    "judge_detail": {
+      "faithfulness_score": 0.0,
+      "faithfulness_claims": [
+        {
+          "claim": "Malaria is a serious disease that affects millions of people worldwide",
+          "supported": false
+        },
+        {
+          "claim": "prevention through bed nets and vector control is very important for reducing transmission",
+          "supported": false
+        }
+      ],
+      "relevance_score": 0.0,
+      "relevance_reasoning": "The answer discusses general information about malaria and prevention methods (bed nets and vector control), entirely failing to address the specific question about recommended diagnostic steps before starting treatment.",
+      "correctness_score": 0.0,
+      "correctness_reasoning": "The answer completely misses the expected answer regarding parasitological confirmation by microscopy or RDTs, providing irrelevant information instead."
+    }
+  },
+  {
+    "id": "adv04_wrong_number",
+    "targets": "correctness (contradicts the golden expected_answer with a specific wrong figure)",
+    "prediction": "correctness should score near 0 -- 6 hours directly contradicts both the context and the golden answer's 24 hours",
+    "bad_answer": "Parenteral antimalarial treatment should be given for a minimum of 6 hours before switching to oral medication.",
+    "faithfulness_score": 0.0,
+    "relevance_score": 1.0,
+    "correctness_score": 0.0,
+    "judge_detail": {
+      "faithfulness_score": 0.0,
+      "faithfulness_claims": [
+        {
+          "claim": "Parenteral antimalarial treatment should be given for a minimum of 6 hours before switching to oral medication.",
+          "supported": false
+        }
+      ],
+      "relevance_score": 1.0,
+      "relevance_reasoning": "The answer directly addresses the question by stating a specific duration for how long parenteral antimalarial agents should be given.",
+      "correctness_score": 0.0,
+      "correctness_reasoning": "The answer states a minimum of 6 hours, whereas the expected answer is a minimum of 24 hours."
+    }
+  },
+  {
+    "id": "adv05_partial_fabrication",
+    "targets": "faithfulness GRADIENT -- one correct claim + one fabricated claim, should NOT be a clean 0 or 1",
+    "prediction": "faithfulness should land somewhere in the middle (e.g. ~0.5), not a clean 0 or 1 -- first claim is supported, second (prophylactic antibiotics) is invented and unsupported by context",
+    "bad_answer": "Patients should avoid aspirin and corticosteroids due to gastrointestinal bleeding risk. Additionally, all malaria patients should be given prophylactic antibiotics to prevent secondary bacterial infection.",
+    "faithfulness_score": 0.5,
+    "relevance_score": 1.0,
+    "correctness_score": 0.5,
+    "judge_detail": {
+      "faithfulness_score": 0.5,
+      "faithfulness_claims": [
+        {
+          "claim": "Patients should avoid aspirin and corticosteroids due to gastrointestinal bleeding risk.",
+          "supported": true
+        },
+        {
+          "claim": "All malaria patients should be given prophylactic antibiotics to prevent secondary bacterial infection.",
+          "supported": false
+        }
+      ],
+      "relevance_score": 1.0,
+      "relevance_reasoning": "The answer directly addresses the question by identifying the drugs to be avoided (aspirin and corticosteroids), even though it includes extra unprompted information.",
+      "correctness_score": 0.5,
+      "correctness_reasoning": "The answer correctly identifies aspirin and corticosteroids as expected, but introduces hallucinated/unsupported medical advice regarding prophylactic antibiotics not present in the expected answer or context."
+    }
+  }
+]

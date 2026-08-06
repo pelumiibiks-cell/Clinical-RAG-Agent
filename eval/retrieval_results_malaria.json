@@ -1,0 +1,1153 @@
+{
+  "summary": {
+    "n_positive_questions": 22,
+    "hit_at_1": 0.4090909090909091,
+    "hit_at_3": 0.6363636363636364,
+    "hit_at_5": 0.7272727272727273,
+    "missed_entirely": [
+      "gs02",
+      "gs05",
+      "gs10",
+      "gs16",
+      "gs17",
+      "gs18"
+    ],
+    "found_but_threshold_blocked": [],
+    "n_negative_controls": 2,
+    "negative_controls_correctly_absent": 0,
+    "negative_controls_false_positive": [
+      {
+        "id": "gs23",
+        "wrong_source_returned": "Nigeria-Essential-Medicine-List-2020.pdf"
+      },
+      {
+        "id": "gs24",
+        "wrong_source_returned": "Nigeria-Essential-Medicine-List-2020.pdf"
+      }
+    ]
+  },
+  "details": [
+    {
+      "id": "gs01",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7883886694908142,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 8,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7535241842269897,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7287585735321045,
+          "source": "9789241548526_eng.pdf",
+          "page": 2,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7281978726387024,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 68,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.7239676713943481,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 1,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs02",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.43250808119773865,
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.43069785833358765,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 39,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.43067997694015503,
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 102,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.41945916414260864,
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.4059307277202606,
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 102,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs03",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7513293027877808,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 10,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7163403630256653,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6963850259780884,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 10,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5952427387237549,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 96,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5925162434577942,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 66,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs04",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.8312391638755798,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 10,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7255383729934692,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7114725708961487,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 67,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6853289008140564,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 66,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6747965216636658,
+          "source": "9789241548526_eng.pdf",
+          "page": 2,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs05",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.6650400757789612,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.6432771682739258,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6328276991844177,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 67,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6320266127586365,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 1,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6299719214439392,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 6,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs06",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 3,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7941511273384094,
+          "source": "9789241548526_eng.pdf",
+          "page": 18,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7244130373001099,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 66,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7227743268013,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7213199138641357,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 106,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.7195221185684204,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 2,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs07",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7237787246704102,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7226758599281311,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6779602766036987,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6721667647361755,
+          "source": "9789241548526_eng.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6705793142318726,
+          "source": "9789241548526_eng.pdf",
+          "page": 12,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs08",
+      "type": "positive",
+      "difficulty": "hard",
+      "hit_rank": 3,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.8429674506187439,
+          "source": "9789241548526_eng.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.8191958665847778,
+          "source": "9789241548526_eng.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7830239534378052,
+          "source": "9789241548526_eng.pdf",
+          "page": 12,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7790557742118835,
+          "source": "9789241548526_eng.pdf",
+          "page": 12,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.7185524702072144,
+          "source": "9789241548526_eng.pdf",
+          "page": 15,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs09",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7608761787414551,
+          "source": "9789241548526_eng.pdf",
+          "page": 19,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7392069101333618,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7197721600532532,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 7,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7136286497116089,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 8,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.7003074884414673,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs10",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.8177375793457031,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.812946617603302,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 9,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.8061661124229431,
+          "source": "9789241548526_eng.pdf",
+          "page": 26,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7919594049453735,
+          "source": "9789241548526_eng.pdf",
+          "page": 65,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.7896134853363037,
+          "source": "9789241548526_eng.pdf",
+          "page": 44,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs11",
+      "type": "positive",
+      "difficulty": "hard",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7594473361968994,
+          "source": "9789241548526_eng.pdf",
+          "page": 34,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7258837223052979,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 83,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6999179720878601,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 83,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6924130916595459,
+          "source": "9789241548526_eng.pdf",
+          "page": 47,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.672146737575531,
+          "source": "9789241548526_eng.pdf",
+          "page": 29,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs12",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 2,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.6087344288825989,
+          "source": "9789241548526_eng.pdf",
+          "page": 47,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.5852757096290588,
+          "source": "9789241548526_eng.pdf",
+          "page": 34,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5755764245986938,
+          "source": "9789241548526_eng.pdf",
+          "page": 29,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5581603050231934,
+          "source": "9789241548526_eng.pdf",
+          "page": 47,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5390216112136841,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 83,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs13",
+      "type": "positive",
+      "difficulty": "hard",
+      "hit_rank": 5,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7176661491394043,
+          "source": "9789241548526_eng.pdf",
+          "page": 38,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7130162715911865,
+          "source": "9789241548526_eng.pdf",
+          "page": 37,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6995026469230652,
+          "source": "9789241548526_eng.pdf",
+          "page": 86,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6932070255279541,
+          "source": "9789241548526_eng.pdf",
+          "page": 38,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6583136916160583,
+          "source": "9789241548526_eng.pdf",
+          "page": 61,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs14",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 5,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.5608036518096924,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 107,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.542874813079834,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 16,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5366981029510498,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.535510241985321,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 44,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5350960493087769,
+          "source": "9789241548526_eng.pdf",
+          "page": 76,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs15",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.6427456140518188,
+          "source": "9789241548526_eng.pdf",
+          "page": 76,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.5984654426574707,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 107,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5874292850494385,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5601015090942383,
+          "source": "9789241548526_eng.pdf",
+          "page": 45,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5490558743476868,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 12,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs16",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.5662406086921692,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.5654164552688599,
+          "source": "9789241548526_eng.pdf",
+          "page": 44,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5582254528999329,
+          "source": "9789241548526_eng.pdf",
+          "page": 30,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5564957857131958,
+          "source": "9789241548526_eng.pdf",
+          "page": 24,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5551328659057617,
+          "source": "9789241548526_eng.pdf",
+          "page": 2,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs17",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.6686972975730896,
+          "source": "9789241548526_eng.pdf",
+          "page": 24,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.6467350721359253,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6452678442001343,
+          "source": "9789241548526_eng.pdf",
+          "page": 14,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6440067887306213,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 67,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6369304656982422,
+          "source": "9789241548526_eng.pdf",
+          "page": 8,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs18",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hit_at_5": false,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7195199728012085,
+          "source": "9789241548526_eng.pdf",
+          "page": 18,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.6861987113952637,
+          "source": "9789241548526_eng.pdf",
+          "page": 51,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6801586151123047,
+          "source": "9789241548526_eng.pdf",
+          "page": 10,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6716959476470947,
+          "source": "9789241548526_eng.pdf",
+          "page": 26,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6706619262695312,
+          "source": "9789241548526_eng.pdf",
+          "page": 15,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs19",
+      "type": "positive",
+      "difficulty": "easy",
+      "hit_rank": 3,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7082477807998657,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 0,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.5811262726783752,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 1,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5763252973556519,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 2,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5746880769729614,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 1,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5604349970817566,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 5,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs20",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 2,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7437791228294373,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 0,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.6861507892608643,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 2,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.640201985836029,
+          "source": "9789241548526_eng.pdf",
+          "page": 88,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6275696754455566,
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 1,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.619699239730835,
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 4,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs21",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7831088900566101,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7325528860092163,
+          "source": "9789241548526_eng.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7153345346450806,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6515832543373108,
+          "source": "9789241548526_eng.pdf",
+          "page": 11,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.636660635471344,
+          "source": "9789241548526_eng.pdf",
+          "page": 6,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs22",
+      "type": "positive",
+      "difficulty": "medium",
+      "hit_rank": 1,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hit_at_5": true,
+      "threshold_would_have_blocked_it": false,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.7499470710754395,
+          "source": "9789241548526_eng.pdf",
+          "page": 34,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.6730644702911377,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 83,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.6449596881866455,
+          "source": "9789241548526_eng.pdf",
+          "page": 29,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.6188335418701172,
+          "source": "9789241548526_eng.pdf",
+          "page": 47,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6057255864143372,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 83,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs23",
+      "type": "negative_control",
+      "correctly_absent": false,
+      "false_positive_source": "Nigeria-Essential-Medicine-List-2020.pdf",
+      "raw_top1_score": 0.6357473134994507,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.6357473134994507,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 39,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.601150393486023,
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 6,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.5836238265037537,
+          "source": "9789241548526_eng.pdf",
+          "page": 75,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.5813527703285217,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 0,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.5734282732009888,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 2,
+          "passes_threshold": true
+        }
+      ]
+    },
+    {
+      "id": "gs24",
+      "type": "negative_control",
+      "correctly_absent": false,
+      "false_positive_source": "Nigeria-Essential-Medicine-List-2020.pdf",
+      "raw_top1_score": 0.8367919325828552,
+      "ranked": [
+        {
+          "rank": 1,
+          "score": 0.8367919325828552,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 0,
+          "passes_threshold": true
+        },
+        {
+          "rank": 2,
+          "score": 0.7201067805290222,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 2,
+          "passes_threshold": true
+        },
+        {
+          "rank": 3,
+          "score": 0.7115075588226318,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 3,
+          "passes_threshold": true
+        },
+        {
+          "rank": 4,
+          "score": 0.7032034397125244,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 3,
+          "passes_threshold": true
+        },
+        {
+          "rank": 5,
+          "score": 0.6887429356575012,
+          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+          "page": 2,
+          "passes_threshold": true
+        }
+      ]
+    }
+  ]
+}
