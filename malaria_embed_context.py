@@ -158,17 +158,23 @@ def chunk_sentences(sentences: list) -> list:
     return chunks
 
 
-def embed_context() -> None:
+def embed_context(progress_callback=None) -> None:
+    """progress_callback(stage, current, total, label), called at each PDF
+    and at the embedding step. stage is one of "reading", "embedding", "done"."""
     model = SentenceTransformer(MODEL)
     chunks = []
     metadata = []
 
     pdf_folder = locate_dir()
+    pdf_files = [
+        p for p in sorted(pdf_folder.iterdir())
+        if p.is_file() and p.suffix.lower() == ".pdf"
+    ]
 
-    for pdf_file in sorted(pdf_folder.iterdir()):
-        if not pdf_file.is_file() or pdf_file.suffix.lower() != (".pdf"):
-            continue
+    for i, pdf_file in enumerate(pdf_files, start=1):
         print("Processing ", pdf_file.name)
+        if progress_callback:
+            progress_callback("reading", i, len(pdf_files), pdf_file.name)
         doc = fitz.open(pdf_file)
 
         for page_number, page in enumerate(doc):
@@ -193,6 +199,8 @@ def embed_context() -> None:
         doc.close()
 
     print("Generating Embedding")
+    if progress_callback:
+        progress_callback("embedding", len(pdf_files), len(pdf_files), f"{len(chunks)} chunks")
 
     embedding = model.encode(
         chunks, show_progress_bar=True, convert_to_numpy=True, normalize_embeddings=True
@@ -211,6 +219,8 @@ def embed_context() -> None:
         pickle.dump(metadata, file)
 
     print("Index and Metadata Saved Sucessfully")
+    if progress_callback:
+        progress_callback("done", len(pdf_files), len(pdf_files), "index saved")
 
 
 if __name__ == "__main__":
