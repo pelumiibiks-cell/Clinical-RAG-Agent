@@ -17,6 +17,9 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+virtual_environment/
+Malaria_Env/
+Malaria_Env.zip
 
 # editor
 .vscode/
