@@ -23,10 +23,11 @@ MIN_CHUNK_CHARS = 20       # drop fragments shorter than this -- stray page numb
 
 
 def locate_dir() -> Path:
-    for candidate in [BASE_DIR / "M_pdfs"]:
-        if candidate.exists():
-            return candidate
-    raise FileNotFoundError("Specified Directory cannot be found in directory")
+    """M_pdfs/ is gitignored, so a fresh clone won't have it -- treat that as
+    'no PDFs yet' and create it, rather than crashing the whole app."""
+    pdf_dir = BASE_DIR / "M_pdfs"
+    pdf_dir.mkdir(parents=True, exist_ok=True)
+    return pdf_dir
 
 
 def split_into_sentences(text: str) -> list:
