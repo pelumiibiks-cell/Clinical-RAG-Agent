@@ -24,6 +24,12 @@ Malaria_Env.zip
 # editor
 .vscode/
 
+# claude harness state
+.claude/
+
+# streamlit logs
+*.log
+
 # OS
 .DS_Store
 Thumbs.db
