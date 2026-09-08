@@ -13,7 +13,10 @@ def render() -> None:
         return
 
     query = st.text_input("Query")
-    top_k = st.slider("top_k", 1, 20, 5)
+    # Reads the sidebar's value rather than defining a competing one. There
+    # used to be two top_k sliders with different ranges, while the threshold
+    # came from the sidebar either way.
+    top_k = st.slider("top_k", 1, 20, st.session_state.top_k)
 
     if not query:
         return
@@ -25,7 +28,7 @@ def render() -> None:
 
     threshold = st.session_state.threshold
     for r in results:
-        passes = r["Score"] > threshold
+        passes = r["Score"] >= threshold  # matches search(), which uses >=
         marker = "✅ above threshold" if passes else "❌ below threshold"
         with st.container(border=True):
             st.markdown(f"**{r['Source']}** · page {r['Page Number']} · score `{r['Score']:.3f}` · {marker}")

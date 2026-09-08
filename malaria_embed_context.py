@@ -347,5 +347,4 @@ def embed_context(progress_callback=None) -> None:
 
 
 if __name__ == "__main__":
-    candidate = locate_dir()
     embed_context()
