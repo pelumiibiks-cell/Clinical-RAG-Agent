@@ -22,32 +22,35 @@ GOLDEN_SET_PATH = BASE_DIR / "golden_set_malaria.json"
 RESULTS_PATH = BASE_DIR / "retrieval_results_malaria.json"
 
 TOP_K = 5  # matches production; we score hit@1 / hit@3 / hit@5 from this one pull
+CANDIDATE_POOL = 30  # matches production: retrieve wide, fuse, then cut to TOP_K
 
 
 def raw_search(query: str, top_k: int = TOP_K):
-    """Same embedding + FAISS call as production, but returns every
-    candidate with its rank and score, with no threshold filtering."""
-    embedding = mq.get_model().encode(
-        [query], convert_to_numpy=True, normalize_embeddings=True
-    )
-    distances, indices = mq.get_index().search(embedding, top_k)
+    """Production's ranking, with no threshold filtering.
 
-    ranked = []
-    for rank, (score, idx) in enumerate(zip(distances[0], indices[0]), start=1):
-        if idx < 0:
-            continue
-        entry = mq.get_metadata()[int(idx)]
-        ranked.append(
+    Calls mq.rank_candidates directly rather than reaching into the FAISS index
+    by hand. The old version did its own index.search(), which meant the eval
+    measured raw dense retrieval and was blind to every ranking change made in
+    the query module -- hybrid fusion and page de-duplication would both have
+    been invisible to it.
+    """
+    metadata = mq.get_metadata()
+    ranked = mq.rank_candidates(query, pool=CANDIDATE_POOL)[:top_k]
+
+    results = []
+    for rank, (idx, score) in enumerate(ranked, start=1):
+        entry = metadata[idx]
+        results.append(
             {
                 "rank": rank,
-                "score": float(score),
+                "score": score,
                 "source": entry.get("Source"),
                 "page": entry.get("Page Number"),
                 "page_end": entry.get("Page End", entry.get("Page Number")),
-                "passes_threshold": float(score) > mq.SIMILARITY_THRESHOLD,
+                "passes_threshold": score >= mq.SIMILARITY_THRESHOLD,
             }
         )
-    return ranked
+    return results
 
 
 def acceptable_keys(item: dict) -> set:

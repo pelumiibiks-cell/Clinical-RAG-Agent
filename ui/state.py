@@ -2,6 +2,14 @@
 
 import streamlit as st
 
+
+def mq_threshold() -> float:
+    """Single source of truth: this used to be a second hardcoded 0.4 that
+    silently drifted from the retriever's own constant."""
+    import malaria_embed_query as mq
+
+    return mq.SIMILARITY_THRESHOLD
+
 import rag_core
 
 
@@ -11,7 +19,7 @@ def init_session_state() -> None:
     if "top_k" not in st.session_state:
         st.session_state.top_k = 5
     if "threshold" not in st.session_state:
-        st.session_state.threshold = 0.4
+        st.session_state.threshold = mq_threshold()
 
 
 @st.cache_resource(show_spinner="Loading embedding model and index (first run only)...")
