@@ -1,98 +1,49 @@
 {
   "summary": {
-    "n_questions": 24,
-    "avg_faithfulness": 0.9791666666666666,
-    "avg_relevance": 1.0,
-    "avg_correctness": 0.8666666666666667,
-    "avg_correctness_indexed_only": 0.8772727272727273,
+    "n_questions": 26,
+    "avg_faithfulness": 1.0,
+    "avg_relevance": 0.9923076923076923,
+    "avg_correctness": 0.8846153846153846,
+    "avg_correctness_indexed_only": 0.875,
     "negative_control_correctness": [
       {
-        "id": "gs23",
-        "correctness_score": 0.5,
-        "answer": "The provided content does not contain information regarding a combination therapy of artesunate and pyronaridine, nor does it mention pyronaridine."
+        "id": "gs25",
+        "correctness_score": 1.0,
+        "answer": "The guidelines provided do not cover the recommended dosing schedule for the RTS,S/AS01 malaria vaccine."
       },
       {
-        "id": "gs24",
+        "id": "gs26",
         "correctness_score": 1.0,
-        "answer": "The current document is the 7th edition of the Nigeria Essential Medicines List, published in 2020 by the Federal Ministry of Health."
+        "answer": "The provided guidelines do not contain information regarding the use of tafenoquine for the radical cure of *P. vivax* or its associated G6PD testing requirements."
       }
     ],
     "lowest_faithfulness": [
       {
-        "id": "gs22",
-        "indexed": true,
-        "question": "How many doses of diazepam is the maximum recommended within a 12-hour period for convulsions?",
-        "generated_answer": "The provided content does not state a maximum recommended number of doses of diazepam specifically within a 12-hour period; however, it does note that you should \"not give more than two doses in 12h.\"",
-        "n_chunks_retrieved": 5,
-        "retrieved_sources": [
-          {
-            "source": "9789241548526_eng.pdf",
-            "page": 34
-          },
-          {
-            "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 83
-          },
-          {
-            "source": "9789241548526_eng.pdf",
-            "page": 29
-          },
-          {
-            "source": "9789241548526_eng.pdf",
-            "page": 47
-          },
-          {
-            "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 83
-          }
-        ],
-        "faithfulness_score": 0.5,
-        "relevance_score": 1.0,
-        "correctness_score": 1.0,
-        "judge_detail": {
-          "faithfulness_score": 0.5,
-          "faithfulness_claims": [
-            {
-              "claim": "The provided content does not state a maximum recommended number of doses of diazepam specifically within a 12-hour period",
-              "supported": false
-            },
-            {
-              "claim": "it does note that you should 'not give more than two doses in 12h.'",
-              "supported": true
-            }
-          ],
-          "relevance_score": 1.0,
-          "relevance_reasoning": "The answer directly addresses the question about the maximum recommended doses of diazepam within a 12-hour period, citing the exact relevant information from the context despite a slight contradiction in its introductory clause.",
-          "correctness_score": 1.0,
-          "correctness_reasoning": "The answer correctly identifies the maximum recommended number of doses as not more than two doses in 12 hours, perfectly matching the expected answer."
-        }
-      },
-      {
         "id": "gs01",
         "indexed": true,
         "question": "What is the recommended first-line treatment for uncomplicated falciparum malaria?",
-        "generated_answer": "The recommended first-line treatments for uncomplicated falciparum malaria are Artemisinin-based combination therapies (ACTs), specifically the following:\n\n*   Artemether + lumefantrine\n*   Artesunate + amodiaquine\n*   Artesunate + mefloquine\n*   Artesunate + sulfadoxine-pyrimethamine\n*   Dihydroartemisinin + piperaquine",
+        "generated_answer": "The recommended first-line treatment for uncomplicated malaria is artemether-lumefantrine (PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf, page 7). \n\nAdditionally, the guidelines state that Artemisinin-based combination therapies (ACTs) are the recommended treatments for uncomplicated falciparum malaria, specifically listing: Artemether + lumefantrine; artesunate + amodiaquine; artesunate + mefloquine; artesunate + sulfadoxine-pyrimethamine; and dihydroartemisinin + piperaquine (WHO_Treatment_Guidelines_Olumense.pdf, page 7).",
         "n_chunks_retrieved": 5,
         "retrieved_sources": [
-          {
-            "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-            "page": 8
-          },
           {
             "source": "WHO_Treatment_Guidelines_Olumense.pdf",
             "page": 7
           },
           {
+            "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+            "page": 8
+          },
+          {
             "source": "9789241548526_eng.pdf",
-            "page": 2
+            "page": 9
           },
           {
             "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 68
+            "page": 7
           },
           {
             "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-            "page": 1
+            "page": 9
           }
         ],
         "faithfulness_score": 1.0,
@@ -102,62 +53,50 @@
           "faithfulness_score": 1.0,
           "faithfulness_claims": [
             {
+              "claim": "The recommended first-line treatment for uncomplicated malaria is artemether-lumefantrine.",
+              "supported": true
+            },
+            {
               "claim": "Artemisinin-based combination therapies (ACTs) are the recommended treatments for uncomplicated falciparum malaria.",
               "supported": true
             },
             {
-              "claim": "Artemether + lumefantrine is a recommended ACT.",
-              "supported": true
-            },
-            {
-              "claim": "Artesunate + amodiaquine is a recommended ACT.",
-              "supported": true
-            },
-            {
-              "claim": "Artesunate + mefloquine is a recommended ACT.",
-              "supported": true
-            },
-            {
-              "claim": "Artesunate + sulfadoxine-pyrimethamine is a recommended ACT.",
-              "supported": true
-            },
-            {
-              "claim": "Dihydroartemisinin + piperaquine is a recommended ACT.",
+              "claim": "Recommended ACTs include Artemether + lumefantrine, artesunate + amodiaquine, artesunate + mefloquine, artesunate + sulfadoxine-pyrimethamine, and dihydroartemisinin + piperaquine.",
               "supported": true
             }
           ],
           "relevance_score": 1.0,
-          "relevance_reasoning": "The answer directly and comprehensively addresses the question about the recommended first-line treatment for uncomplicated falciparum malaria by listing ACTs and specific regimens found in the text.",
+          "relevance_reasoning": "The answer directly and comprehensively addresses the question by identifying the recommended first-line treatment for uncomplicated falciparum malaria using the provided context.",
           "correctness_score": 1.0,
-          "correctness_reasoning": "The answer correctly identifies artemisinin-based combination therapies (ACTs) and lists the specific recommended ACTs provided in the source guidelines, aligning well with the expected answer regarding first-line treatments."
+          "correctness_reasoning": "The answer correctly identifies artemether-lumefantrine as the first-line treatment (citing the PNG guidelines) and lists the recommended ACTs from the WHO guidelines, perfectly aligning with the clinical facts in the context and fulfilling the intent of the expected answer."
         }
       },
       {
         "id": "gs02",
         "indexed": true,
         "question": "How many days of treatment should an ACT course include at minimum?",
-        "generated_answer": "The provided content does not contain information regarding how many days an ACT course should include.",
+        "generated_answer": "The guidelines provided do not cover this.",
         "n_chunks_retrieved": 5,
         "retrieved_sources": [
           {
             "source": "common_clinical_conditions_and_minor_ailments.pdf",
-            "page": 7
+            "page": 91
+          },
+          {
+            "source": "common_clinical_conditions_and_minor_ailments.pdf",
+            "page": 130
+          },
+          {
+            "source": "common_clinical_conditions_and_minor_ailments.pdf",
+            "page": 8
           },
           {
             "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 39
+            "page": 78
           },
           {
             "source": "common_clinical_conditions_and_minor_ailments.pdf",
-            "page": 102
-          },
-          {
-            "source": "common_clinical_conditions_and_minor_ailments.pdf",
-            "page": 7
-          },
-          {
-            "source": "common_clinical_conditions_and_minor_ailments.pdf",
-            "page": 102
+            "page": 6
           }
         ],
         "faithfulness_score": 1.0,
@@ -167,18 +106,22 @@
           "faithfulness_score": 1.0,
           "faithfulness_claims": [],
           "relevance_score": 1.0,
-          "relevance_reasoning": "The answer directly addresses the question by honestly declining, as the information regarding ACT courses is not present in the context.",
+          "relevance_reasoning": "The answer directly addresses the question by honestly stating that the provided guidelines do not contain the information requested.",
           "correctness_score": 0.5,
-          "correctness_reasoning": "The answer correctly declined to answer due to missing information in the context, whereas the expected answer required specific information not available in the provided text (score 0.5 for honest non-answer)."
+          "correctness_reasoning": "The system correctly declined to answer based on the provided context (which does not contain information about ACT courses), but the expected answer required information that was indeed absent from the context, meriting a score of 0.5 for an honest non-answer."
         }
       },
       {
         "id": "gs03",
         "indexed": true,
         "question": "What is the treatment of choice for chloroquine-sensitive P. vivax infections?",
-        "generated_answer": "The treatment of choice for chloroquine-sensitive *P. vivax* infections is chloroquine combined with primaquine.",
+        "generated_answer": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine (WHO_Treatment_Guidelines_Olumense.pdf, p. 10; WHO_Treatment_Guidelines_Olumense.pdf, p. 11; omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, p. 7).",
         "n_chunks_retrieved": 5,
         "retrieved_sources": [
+          {
+            "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+            "page": 11
+          },
           {
             "source": "WHO_Treatment_Guidelines_Olumense.pdf",
             "page": 10
@@ -189,15 +132,11 @@
           },
           {
             "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-            "page": 10
+            "page": 8
           },
           {
-            "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 96
-          },
-          {
-            "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 66
+            "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+            "page": 11
           }
         ],
         "faithfulness_score": 1.0,
@@ -207,42 +146,42 @@
           "faithfulness_score": 1.0,
           "faithfulness_claims": [
             {
-              "claim": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine.",
+              "claim": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine",
               "supported": true
             }
           ],
           "relevance_score": 1.0,
           "relevance_reasoning": "The answer directly and accurately addresses the question regarding the treatment of choice for chloroquine-sensitive P. vivax infections.",
           "correctness_score": 1.0,
-          "correctness_reasoning": "The answer correctly identifies chloroquine combined with primaquine as the treatment of choice, matching the expected answer and the provided context."
+          "correctness_reasoning": "The answer correctly identifies chloroquine combined with primaquine as the treatment of choice, matching the expected answer perfectly."
         }
       },
       {
         "id": "gs04",
         "indexed": true,
         "question": "What should be used to treat P. vivax malaria in areas with chloroquine-resistant strains?",
-        "generated_answer": "In areas with chloroquine-resistant *P. vivax*, the treatment recommended is ACTs (with partner medicines with long-half lives).",
+        "generated_answer": "In areas with chloroquine-resistant *P. vivax*, ACTs (with partner medicines with long-half lives) are recommended for treatment (WHO_Treatment_Guidelines_Olumense.pdf, page 11).",
         "n_chunks_retrieved": 5,
         "retrieved_sources": [
           {
             "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-            "page": 10
+            "page": 11
           },
           {
             "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
             "page": 7
           },
           {
-            "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 67
+            "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+            "page": 8
           },
           {
             "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-            "page": 66
+            "page": 68
           },
           {
             "source": "9789241548526_eng.pdf",
-            "page": 2
+            "page": 7
           }
         ],
         "faithfulness_score": 1.0,
@@ -252,7 +191,7 @@
           "faithfulness_score": 1.0,
           "faithfulness_claims": [
             {
-              "claim": "In areas with chloroquine-resistant P. vivax, the treatment recommended is ACTs (with partner medicines with long-half lives).",
+              "claim": "In areas with chloroquine-resistant P. vivax, ACTs (with partner medicines with long-half lives) are recommended for treatment",
               "supported": true
             }
           ],
@@ -260,6 +199,46 @@
           "relevance_reasoning": "The answer directly and accurately addresses the question regarding the treatment of P. vivax malaria in areas with chloroquine-resistant strains.",
           "correctness_score": 1.0,
           "correctness_reasoning": "The answer matches the expected answer by stating that ACTs with partner medicines with long half-lives are recommended."
+        }
+      },
+      {
+        "id": "gs05",
+        "indexed": true,
+        "question": "Name two oral combination options listed for treating severe or complicated malaria cases mentioned alongside atovaquone-proguanil.",
+        "generated_answer": "The provided guidelines do not list oral combination options for treating severe or complicated malaria alongside atovaquone-proguanil. The document *WHO_Treatment_Guidelines_Olumense.pdf* (page 13) lists atovaquone-proguanil, Artemether +lumefantrine, dihydroartemisinin + piperaquine, and quinine + doxycycline or clindamycin for \"Travellers returning to non-endemic countries,\" but does not specify these for the treatment of severe or complicated malaria.",
+        "n_chunks_retrieved": 5,
+        "retrieved_sources": [
+          {
+            "source": "9789241548526_eng.pdf",
+            "page": 76
+          },
+          {
+            "source": "9789241548526_eng.pdf",
+            "page": 8
+          },
+          {
+            "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+            "page": 13
+          },
+          {
+            "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+            "page": 8
+          },
+          {
+            "source": "9789241548526_eng.pdf",
+            "page": 74
+          }
+        ],
+        "faithfulness_score": 1.0,
+        "relevance_score": 1.0,
+        "correctness_score": 0.0,
+        "judge_detail": {
+          "faithfulness_score": 1.0,
+          "faithfulness_claims": [],
+          "relevance_score": 1.0,
+          "relevance_reasoning": "The answer directly addresses the question by analyzing the context for the requested information and explaining why it cannot provide a positive match based on the text.",
+          "correctness_score": 0.0,
+          "correctness_reasoning": "The answer claims the context does not list oral combination options alongside atovaquone-proguanil for severe malaria, but the context *does* list them (Artemether + lumefantrine, dihydroartemisinin + piperaquine, quinine + doxycycline or clindamycin) in the same bulleted list as atovaquone-proguanil under travellers/treatment. Therefore, the answer incorrectly failed to extract the requested information that was present in the context."
         }
       }
     ]
@@ -269,28 +248,28 @@
       "id": "gs01",
       "indexed": true,
       "question": "What is the recommended first-line treatment for uncomplicated falciparum malaria?",
-      "generated_answer": "The recommended first-line treatments for uncomplicated falciparum malaria are Artemisinin-based combination therapies (ACTs), specifically the following:\n\n*   Artemether + lumefantrine\n*   Artesunate + amodiaquine\n*   Artesunate + mefloquine\n*   Artesunate + sulfadoxine-pyrimethamine\n*   Dihydroartemisinin + piperaquine",
+      "generated_answer": "The recommended first-line treatment for uncomplicated malaria is artemether-lumefantrine (PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf, page 7). \n\nAdditionally, the guidelines state that Artemisinin-based combination therapies (ACTs) are the recommended treatments for uncomplicated falciparum malaria, specifically listing: Artemether + lumefantrine; artesunate + amodiaquine; artesunate + mefloquine; artesunate + sulfadoxine-pyrimethamine; and dihydroartemisinin + piperaquine (WHO_Treatment_Guidelines_Olumense.pdf, page 7).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 8
-        },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
           "page": 7
         },
         {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 8
+        },
+        {
           "source": "9789241548526_eng.pdf",
-          "page": 2
+          "page": 9
         },
         {
           "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 68
+          "page": 7
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 1
+          "page": 9
         }
       ],
       "faithfulness_score": 1.0,
@@ -300,62 +279,50 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
+            "claim": "The recommended first-line treatment for uncomplicated malaria is artemether-lumefantrine.",
+            "supported": true
+          },
+          {
             "claim": "Artemisinin-based combination therapies (ACTs) are the recommended treatments for uncomplicated falciparum malaria.",
             "supported": true
           },
           {
-            "claim": "Artemether + lumefantrine is a recommended ACT.",
-            "supported": true
-          },
-          {
-            "claim": "Artesunate + amodiaquine is a recommended ACT.",
-            "supported": true
-          },
-          {
-            "claim": "Artesunate + mefloquine is a recommended ACT.",
-            "supported": true
-          },
-          {
-            "claim": "Artesunate + sulfadoxine-pyrimethamine is a recommended ACT.",
-            "supported": true
-          },
-          {
-            "claim": "Dihydroartemisinin + piperaquine is a recommended ACT.",
+            "claim": "Recommended ACTs include Artemether + lumefantrine, artesunate + amodiaquine, artesunate + mefloquine, artesunate + sulfadoxine-pyrimethamine, and dihydroartemisinin + piperaquine.",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and comprehensively addresses the question about the recommended first-line treatment for uncomplicated falciparum malaria by listing ACTs and specific regimens found in the text.",
+        "relevance_reasoning": "The answer directly and comprehensively addresses the question by identifying the recommended first-line treatment for uncomplicated falciparum malaria using the provided context.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly identifies artemisinin-based combination therapies (ACTs) and lists the specific recommended ACTs provided in the source guidelines, aligning well with the expected answer regarding first-line treatments."
+        "correctness_reasoning": "The answer correctly identifies artemether-lumefantrine as the first-line treatment (citing the PNG guidelines) and lists the recommended ACTs from the WHO guidelines, perfectly aligning with the clinical facts in the context and fulfilling the intent of the expected answer."
       }
     },
     {
       "id": "gs02",
       "indexed": true,
       "question": "How many days of treatment should an ACT course include at minimum?",
-      "generated_answer": "The provided content does not contain information regarding how many days an ACT course should include.",
+      "generated_answer": "The guidelines provided do not cover this.",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "common_clinical_conditions_and_minor_ailments.pdf",
-          "page": 7
+          "page": 91
+        },
+        {
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 130
+        },
+        {
+          "source": "common_clinical_conditions_and_minor_ailments.pdf",
+          "page": 8
         },
         {
           "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 39
+          "page": 78
         },
         {
           "source": "common_clinical_conditions_and_minor_ailments.pdf",
-          "page": 102
-        },
-        {
-          "source": "common_clinical_conditions_and_minor_ailments.pdf",
-          "page": 7
-        },
-        {
-          "source": "common_clinical_conditions_and_minor_ailments.pdf",
-          "page": 102
+          "page": 6
         }
       ],
       "faithfulness_score": 1.0,
@@ -365,18 +332,22 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by honestly declining, as the information regarding ACT courses is not present in the context.",
+        "relevance_reasoning": "The answer directly addresses the question by honestly stating that the provided guidelines do not contain the information requested.",
         "correctness_score": 0.5,
-        "correctness_reasoning": "The answer correctly declined to answer due to missing information in the context, whereas the expected answer required specific information not available in the provided text (score 0.5 for honest non-answer)."
+        "correctness_reasoning": "The system correctly declined to answer based on the provided context (which does not contain information about ACT courses), but the expected answer required information that was indeed absent from the context, meriting a score of 0.5 for an honest non-answer."
       }
     },
     {
       "id": "gs03",
       "indexed": true,
       "question": "What is the treatment of choice for chloroquine-sensitive P. vivax infections?",
-      "generated_answer": "The treatment of choice for chloroquine-sensitive *P. vivax* infections is chloroquine combined with primaquine.",
+      "generated_answer": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine (WHO_Treatment_Guidelines_Olumense.pdf, p. 10; WHO_Treatment_Guidelines_Olumense.pdf, p. 11; omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, p. 7).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
+        {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 11
+        },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
           "page": 10
@@ -387,15 +358,11 @@
         },
         {
           "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 10
+          "page": 8
         },
         {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 96
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 66
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 11
         }
       ],
       "faithfulness_score": 1.0,
@@ -405,42 +372,42 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine.",
+            "claim": "The treatment of choice for chloroquine-sensitive P. vivax infections is chloroquine combined with primaquine",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
         "relevance_reasoning": "The answer directly and accurately addresses the question regarding the treatment of choice for chloroquine-sensitive P. vivax infections.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly identifies chloroquine combined with primaquine as the treatment of choice, matching the expected answer and the provided context."
+        "correctness_reasoning": "The answer correctly identifies chloroquine combined with primaquine as the treatment of choice, matching the expected answer perfectly."
       }
     },
     {
       "id": "gs04",
       "indexed": true,
       "question": "What should be used to treat P. vivax malaria in areas with chloroquine-resistant strains?",
-      "generated_answer": "In areas with chloroquine-resistant *P. vivax*, the treatment recommended is ACTs (with partner medicines with long-half lives).",
+      "generated_answer": "In areas with chloroquine-resistant *P. vivax*, ACTs (with partner medicines with long-half lives) are recommended for treatment (WHO_Treatment_Guidelines_Olumense.pdf, page 11).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 10
+          "page": 11
         },
         {
           "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
           "page": 7
         },
         {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 67
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 8
         },
         {
           "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 66
+          "page": 68
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 2
+          "page": 7
         }
       ],
       "faithfulness_score": 1.0,
@@ -450,7 +417,7 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "In areas with chloroquine-resistant P. vivax, the treatment recommended is ACTs (with partner medicines with long-half lives).",
+            "claim": "In areas with chloroquine-resistant P. vivax, ACTs (with partner medicines with long-half lives) are recommended for treatment",
             "supported": true
           }
         ],
@@ -464,203 +431,20 @@
       "id": "gs05",
       "indexed": true,
       "question": "Name two oral combination options listed for treating severe or complicated malaria cases mentioned alongside atovaquone-proguanil.",
-      "generated_answer": "The provided content does not contain information regarding atovaquone-proguanil. Therefore, the answer is not contained in the content.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 7
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 75
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 67
-        },
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 1
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 6
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 0.5,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by honestly declining to answer because the requested information regarding atovaquone-proguanil was not present in the context.",
-        "correctness_score": 0.5,
-        "correctness_reasoning": "The system correctly identified that the context lacked the information requested in the question (atovaquone-proguanil), resulting in an honest non-answer, scoring 0.5."
-      }
-    },
-    {
-      "id": "gs06",
-      "indexed": true,
-      "question": "What diagnostic step is recommended before starting malaria treatment in all suspected patients?",
-      "generated_answer": "Prompt parasitological confirmation by microscopy or, alternatively, by Malaria Rapid Diagnostic Tests (RDTs) is recommended in all patients suspected of malaria before treatment is started.",
+      "generated_answer": "The provided guidelines do not list oral combination options for treating severe or complicated malaria alongside atovaquone-proguanil. The document *WHO_Treatment_Guidelines_Olumense.pdf* (page 13) lists atovaquone-proguanil, Artemether +lumefantrine, dihydroartemisinin + piperaquine, and quinine + doxycycline or clindamycin for \"Travellers returning to non-endemic countries,\" but does not specify these for the treatment of severe or complicated malaria.",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 18
+          "page": 76
         },
         {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 66
+          "source": "9789241548526_eng.pdf",
+          "page": 8
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 6
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 106
-        },
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 2
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "Prompt parasitological confirmation by microscopy or, alternatively, by Malaria Rapid Diagnostic Tests (RDTs) is recommended in all patients suspected of malaria before treatment is started.",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and fully addresses the question regarding the recommended diagnostic step before starting malaria treatment.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer matches the expected answer by stating that prompt parasitological confirmation by microscopy or RDTs is recommended before treatment."
-      }
-    },
-    {
-      "id": "gs07",
-      "indexed": true,
-      "question": "What proportion of the world's population is at risk of malaria according to the WHO guidelines?",
-      "generated_answer": "According to the provided content, over 40% of the world\u2019s population\u2014more than 3.3 billion people\u2014are at risk for malaria to varying degrees.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 6
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 6
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 6
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 11
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 12
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "Over 40% of the world's population is at risk for malaria to varying degrees",
-            "supported": true
-          },
-          {
-            "claim": "More than 3.3 billion people are at risk for malaria",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses the question regarding what proportion of the world's population is at risk of malaria.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer matches the expected answer perfectly by stating that over 40% of the world's population (more than 3.3 billion people) are at risk."
-      }
-    },
-    {
-      "id": "gs08",
-      "indexed": true,
-      "question": "How is a 'low transmission' malaria area defined in terms of P. falciparum parasitaemia prevalence?",
-      "generated_answer": "A low-transmission area is defined as a hypoendemic area in which the prevalence rate of *P. falciparum* parasitaemia is 10% or less during most of the year among children aged 2\u20139 years.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 11
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 11
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 12
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 12
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 15
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "A low-transmission area is defined as a hypoendemic area.",
-            "supported": true
-          },
-          {
-            "claim": "The prevalence rate of P. falciparum parasitaemia is 10% or less during most of the year among children aged 2-9 years.",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses the question regarding how a low-transmission malaria area is defined in terms of P. falciparum parasitaemia prevalence.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer matches the expected answer perfectly in factual content, correctly identifying the definition based on the context."
-      }
-    },
-    {
-      "id": "gs09",
-      "indexed": true,
-      "question": "How should artemisinin suppository formulations be used in severe malaria treatment?",
-      "generated_answer": "Suppository formulations of artemisinin and its derivatives should be given as pre-referral treatment in cases where parenteral therapy with artesunate or quinine is not possible or feasible.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 19
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 75
-        },
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 7
+          "page": 13
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
@@ -668,7 +452,47 @@
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 75
+          "page": 74
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 0.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly addresses the question by analyzing the context for the requested information and explaining why it cannot provide a positive match based on the text.",
+        "correctness_score": 0.0,
+        "correctness_reasoning": "The answer claims the context does not list oral combination options alongside atovaquone-proguanil for severe malaria, but the context *does* list them (Artemether + lumefantrine, dihydroartemisinin + piperaquine, quinine + doxycycline or clindamycin) in the same bulleted list as atovaquone-proguanil under travellers/treatment. Therefore, the answer incorrectly failed to extract the requested information that was present in the context."
+      }
+    },
+    {
+      "id": "gs06",
+      "indexed": true,
+      "question": "What diagnostic step is recommended before starting malaria treatment in all suspected patients?",
+      "generated_answer": "The provided guidelines offer conflicting recommendations:\n\n*   \"Prompt parasitological confirmation by microscopy is recommended in all patients suspected of malaria before treatment is started\" (omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, page 5).\n*   \"Prompt parasitological confirmation by microscopy or alternatively by RDTs is recommended in all patients suspected of malaria before treatment is started\" (WHO_Treatment_Guidelines_Olumense.pdf, page 5).\n\nAdditionally, one source notes that \"Treatment solely on the basis of clinical suspicion should only be considered when a parasitological diagnosis is not accessible\" (WHO_Treatment_Guidelines_Olumense.pdf, page 5), while another states \"No treatment on the basis of clinical diagnosis, and No presumptive treatment of malaria\" (omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, page 5).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 5
+        },
+        {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 5
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 25
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 66
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 19
         }
       ],
       "faithfulness_score": 1.0,
@@ -678,42 +502,189 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "Suppository formulations of artemisinin and its derivatives should be given as pre-referral treatment where parenteral therapy with artesunate or quinine is not possible or feasible.",
+            "claim": "Prompt parasitological confirmation by microscopy is recommended in all patients suspected of malaria before treatment is started",
+            "supported": true
+          },
+          {
+            "claim": "Prompt parasitological confirmation by microscopy or alternatively by RDTs is recommended in all patients suspected of malaria before treatment is started",
+            "supported": true
+          },
+          {
+            "claim": "Treatment solely on the basis of clinical suspicion should only be considered when a parasitological diagnosis is not accessible",
+            "supported": true
+          },
+          {
+            "claim": "No treatment on the basis of clinical diagnosis, and No presumptive treatment of malaria",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and fully addresses the question about how artemisinin suppository formulations should be used in severe malaria treatment based on the text.",
+        "relevance_reasoning": "The answer directly addresses the question by detailing the recommended diagnostic steps before starting malaria treatment, even highlighting the nuances and slight differences across the provided context sources.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer matches the expected answer perfectly in factual content, correctly stating that suppository formulations should be used as pre-referral treatment when parenteral therapy is not possible or feasible."
+        "correctness_reasoning": "The answer accurately captures the diagnostic recommendations present in the context sources (microscopy or RDTs), matching the core information required by the expected answer while highlighting the specific source guidelines."
       }
     },
     {
-      "id": "gs10",
+      "id": "gs07",
       "indexed": true,
-      "question": "For how long should parenteral antimalarial agents be given at minimum in treating severe malaria?",
-      "generated_answer": "Parenteral antimalarial agents should be given for a minimum of 24 hours.",
+      "question": "What proportion of the world's population is at risk of malaria according to the WHO guidelines?",
+      "generated_answer": "Over 40% of the world\u2019s population\u2014more than 3.3 billion people\u2014is at risk for malaria (9789241548526_eng.pdf, page 6; 9789241548526_eng.pdf, page 7).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 75
+          "page": 7
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 6
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 12
+        },
+        {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 3
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 69
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "Over 40% of the world's population\u2014more than 3.3 billion people\u2014is at risk for malaria",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the proportion of the world's population at risk for malaria based on the context.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer matches the expected answer perfectly by stating over 40% and more than 3.3 billion people."
+      }
+    },
+    {
+      "id": "gs08",
+      "indexed": true,
+      "question": "How is a 'low transmission' malaria area defined in terms of P. falciparum parasitaemia prevalence?",
+      "generated_answer": "A low transmission area is defined as a hypoendemic area in which the prevalence rate of P. falciparum parasitaemia is 10% or less during most of the year among children aged 2\u20139 years (9789241548526_eng.pdf, page 13).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 13
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 12
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 11
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 11
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 16
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "A low transmission area is defined as a hypoendemic area in which the prevalence rate of P. falciparum parasitaemia is 10% or less during most of the year among children aged 2\u20139 years.",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding how a low transmission malaria area is defined.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer matches the expected answer precisely, correctly identifying the definition of a low transmission area based on P. falciparum parasitaemia prevalence."
+      }
+    },
+    {
+      "id": "gs09",
+      "indexed": true,
+      "question": "How should artemisinin suppository formulations be used in severe malaria treatment?",
+      "generated_answer": "Suppository formulations of artemisinin and its derivatives should be used as pre-referral treatment when parenteral therapy with artesunate or quinine is not possible or feasible (9789241548526_eng.pdf, page 20).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 20
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
           "page": 9
         },
         {
-          "source": "9789241548526_eng.pdf",
-          "page": 26
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 8
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 65
+          "page": 46
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 44
+          "page": 76
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "Suppository formulations of artemisinin and its derivatives should be used as pre-referral treatment when parenteral therapy with artesunate or quinine is not possible or feasible",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and fully addresses the question about how artemisinin suppository formulations should be used in severe malaria treatment.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer matches the expected answer factually, stating that artemisinin suppository formulations should be used as pre-referral treatment when parenteral therapy with artesunate or quinine is not possible or feasible."
+      }
+    },
+    {
+      "id": "gs10",
+      "indexed": true,
+      "question": "For how long should parenteral antimalarial agents be given at minimum in treating severe malaria?",
+      "generated_answer": "Parenteral antimalarial agents should be given for a minimum of 24 hours (omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, p. 12; 9789241548526_eng.pdf, p. 20, p. 45; PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf, p. 69).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 12
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 45
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 66
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 69
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 20
         }
       ],
       "faithfulness_score": 1.0,
@@ -728,37 +699,37 @@
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and precisely addresses the question regarding the minimum duration for giving parenteral antimalarial agents in severe malaria.",
+        "relevance_reasoning": "The answer directly addresses the question by stating the minimum duration for giving parenteral antimalarial agents.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly identifies the minimum duration as 24 hours, matching the expected answer's core factual requirement."
+        "correctness_reasoning": "The answer correctly identifies that parenteral antimalarial agents should be given for a minimum of 24 hours, which matches the expected answer."
       }
     },
     {
       "id": "gs11",
       "indexed": true,
       "question": "What should be checked if convulsions persist after two doses of diazepam?",
-      "generated_answer": "According to the provided content, if the convulsions persist after two doses of diazepam, you should check for respiratory depression and, if present, provide ventilatory support.",
+      "generated_answer": "If convulsions persist after two doses of diazepam, check for respiratory depression and if present, provide ventilatory support (9789241548526_eng.pdf, page 35). Additionally, patients with seizures not terminated by two doses of diazepam should be considered to have status epilepticus (9789241548526_eng.pdf, page 30; 9789241548526_eng.pdf, page 48).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 34
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 83
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 83
+          "page": 35
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 47
+          "page": 30
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 29
+          "page": 48
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 84
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 19
         }
       ],
       "faithfulness_score": 1.0,
@@ -768,209 +739,34 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "If the convulsions persist after two doses of diazepam, you should check for respiratory depression",
+            "claim": "If convulsions persist after two doses of diazepam, check for respiratory depression",
             "supported": true
           },
           {
             "claim": "if respiratory depression is present, provide ventilatory support",
             "supported": true
+          },
+          {
+            "claim": "patients with seizures not terminated by two doses of diazepam should be considered to have status epilepticus",
+            "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses what should be checked if convulsions persist after two doses of diazepam, based on the text.",
+        "relevance_reasoning": "The answer directly addresses the question by stating what should be checked if convulsions persist after two doses of diazepam (respiratory depression), while also providing additional relevant context from the sources.",
         "correctness_score": 0.8,
-        "correctness_reasoning": "The answer correctly identifies that respiratory depression should be checked if convulsions persist after two doses of diazepam, matching the context and expected answer, though it omits the subsequent step regarding the phenytoin/phenobarbitone loading dose mentioned in the expected answer."
+        "correctness_reasoning": "The answer correctly identifies that respiratory depression should be checked, which matches the expected answer's primary point. However, it misses the second part of the expected answer regarding giving a loading dose of phenytoin or phenobarbitone, though it correctly includes the status epilepticus detail."
       }
     },
     {
       "id": "gs12",
       "indexed": true,
       "question": "Is diazepam well absorbed when given intramuscularly?",
-      "generated_answer": "No, diazepam is poorly absorbed when given intramuscularly.",
+      "generated_answer": "No, diazepam is poorly absorbed intramuscularly (9789241548526_eng.pdf, page 35).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 47
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 34
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 29
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 47
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 83
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "diazepam is poorly absorbed when given intramuscularly",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and concisely addresses the question about the absorption of diazepam when given intramuscularly.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly states that diazepam is poorly absorbed intramuscularly, matching the expected answer and the provided context."
-      }
-    },
-    {
-      "id": "gs13",
-      "indexed": true,
-      "question": "At what haemoglobin or haematocrit threshold should a blood transfusion be given in a fluid-overloaded postpartum patient?",
-      "generated_answer": "The provided content does not contain information regarding a specific transfusion threshold for a \"fluid-overloaded postpartum patient.\" \n\nWhile the content mentions that pulmonary oedema may develop in women who go into labour when fluid-overloaded, it provides management instructions for women where the haematocrit falls below 20% or the haemoglobin concentration falls below 7g/dl, but does not specify that these thresholds are modified for fluid-overloaded patients.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 38
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 37
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 86
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 38
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 61
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 0.5,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by analyzing the provided text and explaining that it does not contain a specific transfusion threshold tailored explicitly for a 'fluid-overloaded postpartum patient', while appropriately noting the general postpartum/labour pulmonary oedema threshold present in the text.",
-        "correctness_score": 0.5,
-        "correctness_reasoning": "The expected answer provided a specific threshold (haematocrit < 20% or haemoglobin < 7 g/dl) which is actually present in the context under the postpartum/pulmonary oedema section ('Pulmonary oedema may develop in women who go into labour... If the erythrocyte volume fraction (haematocrit) falls below 20% or the haemoglobin concentration falls below 7g/dl, give a transfusion...'). Therefore, the system's claim that the info was missing was incorrect based on the context, but because it honestly declined based on a strict reading of 'fluid-overloaded postpartum patient', a score of 0.5 is assigned for an honest non-answer that missed the connection in the text."
-      }
-    },
-    {
-      "id": "gs14",
-      "indexed": true,
-      "question": "What formulations is artemether available in?",
-      "generated_answer": "Based on the provided content, artemether is available in oral (in combination treatment), rectal, and intramuscular formulations.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 107
-        },
-        {
-          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 16
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 6
-        },
-        {
-          "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 44
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 76
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "artemether is available in oral (in combination treatment), rectal, and intramuscular formulations",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and fully addresses the question about the formulations in which artemether is available.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer accurately matches the expected answer regarding the formulations of artemether based on the provided context."
-      }
-    },
-    {
-      "id": "gs15",
-      "indexed": true,
-      "question": "Why might the intramuscular formulation of artemether be absorbed inconsistently in severely ill patients?",
-      "generated_answer": "The intramuscular formulation of artemether may be absorbed inconsistently in severely ill patients because it is oil-based.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 76
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 107
-        },
-        {
-          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 11
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 45
-        },
-        {
-          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 12
-        }
-      ],
-      "faithfulness_score": 1.0,
-      "relevance_score": 1.0,
-      "correctness_score": 1.0,
-      "judge_detail": {
-        "faithfulness_score": 1.0,
-        "faithfulness_claims": [
-          {
-            "claim": "The intramuscular formulation of artemether may be absorbed inconsistently in severely ill patients because it is oil-based.",
-            "supported": true
-          }
-        ],
-        "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses the question by explaining why artemether is absorbed inconsistently in severely ill patients.",
-        "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly captures the reason provided in the expected answer and context (that the parenteral formulation is oil-based and may be inadequately or erratically absorbed)."
-      }
-    },
-    {
-      "id": "gs16",
-      "indexed": true,
-      "question": "What antipyretic is recommended for reducing high body temperatures above 39\u00c2\u00b0C in malaria patients?",
-      "generated_answer": "Paracetamol is the recommended antipyretic, which may be given orally or rectally at 15mg/kg of body weight every 4 hours to keep the rectal temperature below 39\u00b0C.",
-      "n_chunks_retrieved": 5,
-      "retrieved_sources": [
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 75
-        },
-        {
-          "source": "9789241548526_eng.pdf",
-          "page": 44
+          "page": 35
         },
         {
           "source": "9789241548526_eng.pdf",
@@ -978,11 +774,15 @@
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 24
+          "page": 48
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 84
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 2
+          "page": 48
         }
       ],
       "faithfulness_score": 1.0,
@@ -992,42 +792,173 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "Paracetamol is the recommended antipyretic",
-            "supported": true
-          },
-          {
-            "claim": "it may be given orally or rectally at 15mg/kg of body weight every 4 hours",
-            "supported": true
-          },
-          {
-            "claim": "it is used to keep the rectal temperature below 39\u00b0C",
+            "claim": "Diazepam is poorly absorbed intramuscularly.",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question about the recommended antipyretic and the dosage/instructions provided in the context.",
+        "relevance_reasoning": "The answer directly and concisely addresses the question of whether diazepam is well absorbed intramuscularly.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly identifies paracetamol and provides the exact dosing and temperature management details matching the expected answer and source text."
+        "correctness_reasoning": "The answer correctly states that diazepam is poorly absorbed intramuscularly, matching the expected answer's core fact."
       }
     },
     {
-      "id": "gs17",
+      "id": "gs13",
       "indexed": true,
-      "question": "What drugs should be avoided in malaria patients because they increase the risk of gastrointestinal bleeding?",
-      "generated_answer": "The provided content does not contain information regarding which drugs should be avoided in malaria patients due to the risk of gastrointestinal bleeding.",
+      "question": "At what haemoglobin or haematocrit threshold should a blood transfusion be given in a fluid-overloaded postpartum patient?",
+      "generated_answer": "The provided guidelines do not specify a threshold for blood transfusion specifically for a postpartum patient who is already fluid-overloaded. \n\nFor women who are severely anaemic or fluid-overloaded when going into labour, the guidelines state that if the haematocrit falls below 20% or the haemoglobin concentration falls below 7g/dl, a transfusion should be given over 6h along with 20mg of furosemide (frusemide) intravenously (9789241548526_eng.pdf, page 62).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 24
+          "page": 38
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 75
+          "page": 38
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 57
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 14
+          "page": 62
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 50
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 0.8,
+      "correctness_score": 0.8,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "For women who are severely anaemic or fluid-overloaded when going into labour, the guidelines state that if the haematocrit falls below 20% or the haemoglobin concentration falls below 7g/dl, a transfusion should be given over 6h along with 20mg of furosemide (frusemide) intravenously.",
+            "supported": true
+          }
+        ],
+        "relevance_score": 0.8,
+        "relevance_reasoning": "The answer addresses the question by noting that the guidelines specifically mention women going into labour when severely anaemic or fluid-overloaded (which is closely related to postpartum fluid overload from the same context), though it initially claims the text does not specify postpartum patients directly.",
+        "correctness_score": 0.8,
+        "correctness_reasoning": "The answer correctly identifies the threshold (haematocrit < 20% or haemoglobin < 7g/dl) and treatment details (6h transfusion, 20mg furosemide) found in the context for women in labour with severe anaemia or fluid overload, which aligns closely with the expected answer, despite a minor strict distinction regarding 'postpartum' vs 'going into labour with postpartum/fluid overload risk'."
+      }
+    },
+    {
+      "id": "gs14",
+      "indexed": true,
+      "question": "What formulations is artemether available in?",
+      "generated_answer": "Artemether is available in oral (in combination treatment), rectal, and intramuscular formulations (9789241548526_eng.pdf, page 76; 9789241548526_eng.pdf, page 77).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 77
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 7
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 76
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 74
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 20
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "Artemether is available in oral (in combination treatment), rectal, and intramuscular formulations.",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the available formulations of artemether.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer matches the expected answer and correctly lists oral, rectal, and intramuscular formulations based on the provided text."
+      }
+    },
+    {
+      "id": "gs15",
+      "indexed": true,
+      "question": "Why might the intramuscular formulation of artemether be absorbed inconsistently in severely ill patients?",
+      "generated_answer": "The intramuscular formulation of artemether is oil-based, which may result in inadequate or erratic absorption in severely ill patients (9789241548526_eng.pdf, page 77).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 77
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 76
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 20
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 45
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 69
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "The intramuscular formulation of artemether is oil-based.",
+            "supported": true
+          },
+          {
+            "claim": "This may result in inadequate or erratic absorption in severely ill patients.",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and accurately addresses why the intramuscular formulation of artemether might be absorbed inconsistently in severely ill patients.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer perfectly matches the expected answer and accurately conveys the reason found in the context (oil-based formulation leading to inadequate/erratic absorption)."
+      }
+    },
+    {
+      "id": "gs16",
+      "indexed": true,
+      "question": "What antipyretic is recommended for reducing high body temperatures above 39\u00c2\u00b0C in malaria patients?",
+      "generated_answer": "Paracetamol is recommended as an antipyretic to reduce high body temperatures (> 39\u00b0C) (9789241548526_eng.pdf, page 22). It may be given orally or rectally at 15mg/kg of body weight every 4h to keep the rectal temperature below 39\u00b0C (9789241548526_eng.pdf, page 31).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 22
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 31
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 45
         },
         {
           "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
@@ -1035,47 +966,101 @@
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 8
+          "page": 20
         }
       ],
       "faithfulness_score": 1.0,
       "relevance_score": 1.0,
-      "correctness_score": 0.5,
+      "correctness_score": 0.9,
       "judge_detail": {
         "faithfulness_score": 1.0,
-        "faithfulness_claims": [],
+        "faithfulness_claims": [
+          {
+            "claim": "Paracetamol is recommended as an antipyretic to reduce high body temperatures (> 39\u00b0C).",
+            "supported": true
+          },
+          {
+            "claim": "It may be given orally or rectally at 15mg/kg of body weight every 4h to keep the rectal temperature below 39\u00b0C.",
+            "supported": true
+          }
+        ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by honestly declining, noting that the provided context does not contain the requested information.",
-        "correctness_score": 0.5,
-        "correctness_reasoning": "The answer correctly declines to answer based on missing information in the context, and since the expected answer required external/unprovided info, it receives a score of 0.5 for an honest non-answer."
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the recommended antipyretic for high body temperatures.",
+        "correctness_score": 0.9,
+        "correctness_reasoning": "The answer correctly identifies paracetamol and provides specific dosing and temperature thresholds from the text, matching the expected answer closely (though it omits tepid sponging and fanning, it is still largely correct)."
+      }
+    },
+    {
+      "id": "gs17",
+      "indexed": true,
+      "question": "What drugs should be avoided in malaria patients because they increase the risk of gastrointestinal bleeding?",
+      "generated_answer": "Aspirin and corticosteroids should be avoided because they increase the risk for gastrointestinal bleeding (9789241548526_eng.pdf, page 22).",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 22
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 62
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 46
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 57
+        },
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 13
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [
+          {
+            "claim": "Aspirin and corticosteroids should be avoided because they increase the risk for gastrointestinal bleeding",
+            "supported": true
+          }
+        ],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding which drugs should be avoided due to the risk of gastrointestinal bleeding.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer correctly identifies aspirin and corticosteroids as the drugs to avoid, matching the expected answer and supported by the context."
       }
     },
     {
       "id": "gs18",
       "indexed": true,
       "question": "What lab values should be regularly monitored in a patient with impaired perfusion from severe malaria?",
-      "generated_answer": "The provided content does not contain information regarding the specific lab values that should be regularly monitored in a patient with impaired perfusion from severe malaria.",
+      "generated_answer": "The provided guidelines do not specify which lab values should be regularly monitored in a patient with impaired perfusion, other than stating that if facilities are available, one should \"measure blood gases and arterial pH and continue to monitor oxygenation by oximetry\" in cases where respiratory distress is present (9789241548526_eng.pdf, page 53).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 18
+          "page": 11
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 51
+          "page": 34
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 10
+          "page": 53
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 26
+          "page": 25
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 15
+          "page": 21
         }
       ],
       "faithfulness_score": 1.0,
@@ -1085,26 +1070,18 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by honestly stating that the information is not present in the provided context.",
+        "relevance_reasoning": "The answer directly addresses the question by honestly stating that the provided context does not contain the specific information requested, while citing the related information available about monitoring in the text.",
         "correctness_score": 0.5,
-        "correctness_reasoning": "The answer correctly declines to answer due to a lack of information in the context, and the expected answer required information that was not present in the provided context (representing an honest non-answer, scored at 0.5)."
+        "correctness_reasoning": "The system correctly declined to answer based on the provided context (which lacked the specific full list of lab values like haematocrit, glucose, urea/creatinine, and electrolytes for impaired perfusion, though it mentioned blood gases/pH/oximetry for respiratory distress). Per instructions, an honest non-answer when the context doesn't have the info scores 0.5."
       }
     },
     {
       "id": "gs19",
       "indexed": true,
       "question": "Within what time frame should all malaria cases be notified, according to the pocket manual for Oman?",
-      "generated_answer": "All malaria cases should be notified within 24 hours.",
+      "generated_answer": "All malaria cases should be notified within 24 hours (omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, page 2).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
-        {
-          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 0
-        },
-        {
-          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 1
-        },
         {
           "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
           "page": 2
@@ -1115,6 +1092,14 @@
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 2
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 69
+        },
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
           "page": 5
         }
       ],
@@ -1130,21 +1115,21 @@
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the time frame for notifying malaria cases according to the Oman pocket manual.",
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the time frame for notifying malaria cases.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer matches the expected answer by stating 'within 24 hours'."
+        "correctness_reasoning": "The answer matches the expected answer by stating that all malaria cases should be notified within 24 hours."
       }
     },
     {
       "id": "gs20",
       "indexed": true,
       "question": "Is management of malaria cases free of charge in Oman's health system, per the pocket manual?",
-      "generated_answer": "Yes, according to the pocket manual, management of malaria cases is free of charge.",
+      "generated_answer": "Yes, management of malaria cases is free of charge (omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf, page 2).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 0
+          "page": 1
         },
         {
           "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
@@ -1152,15 +1137,15 @@
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 88
-        },
-        {
-          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-          "page": 1
+          "page": 8
         },
         {
           "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-          "page": 4
+          "page": 2
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 69
         }
       ],
       "faithfulness_score": 1.0,
@@ -1170,42 +1155,42 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "Management of malaria cases is free of charge according to the pocket manual.",
+            "claim": "Management of malaria cases is free of charge",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and accurately addresses whether malaria management is free of charge per the pocket manual.",
+        "relevance_reasoning": "The answer directly and accurately addresses whether malaria management is free of charge according to the provided text.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly states that malaria case management is free of charge, which matches the expected answer and context, even though it omits the secondary detail about medicine availability."
+        "correctness_reasoning": "The answer correctly states that management of malaria cases is free of charge, matching the expected answer's core affirmation."
       }
     },
     {
       "id": "gs21",
       "indexed": true,
       "question": "What percentage of the world's population at risk for malaria live in countries with on-going transmission, and are large numbers of travelers from non-endemic areas also being affected?",
-      "generated_answer": "Over 40% of the world\u2019s population is at risk for malaria in countries with on-going transmission. Yes, large numbers of people from non-malarious areas are being infected due to modern, rapid means of travel, which may seriously affect them after they have returned home.",
+      "generated_answer": "Over 40% of the world\u2019s population\u2014more than 3.3 billion people\u2014are at risk for malaria in countries with on-going transmission (9789241548526_eng.pdf, page 7). Yes, large numbers of people from nonmalarious areas are being infected due to modern, rapid means of travel, which may seriously affect them after they have returned home (9789241548526_eng.pdf, page 7).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 6
+          "page": 7
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 11
+          "page": 12
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 6
+          "page": 14
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 11
+          "page": 89
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 6
+          "page": 15
         }
       ],
       "faithfulness_score": 1.0,
@@ -1215,99 +1200,95 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "Over 40% of the world's population is at risk for malaria in countries with on-going transmission.",
+            "claim": "Over 40% of the world\u2019s population\u2014more than 3.3 billion people\u2014are at risk for malaria in countries with on-going transmission",
             "supported": true
           },
           {
-            "claim": "Large numbers of people from non-malarious areas are being infected due to modern, rapid means of travel.",
+            "claim": "Large numbers of people from nonmalarious areas are being infected due to modern, rapid means of travel",
             "supported": true
           },
           {
-            "claim": "Infection may seriously affect travelers after they have returned home.",
+            "claim": "This infection may seriously affect them after they have returned home",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses both parts of the question: the percentage of the world's population at risk in transmission countries, and whether travelers from non-endemic areas are being affected.",
+        "relevance_reasoning": "The answer directly and fully addresses both parts of the question: the percentage/number of the world's population at risk in countries with on-going transmission, and whether travelers from non-endemic areas are being affected.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly captures all key information required by the expected answer, matching the source text accurately."
+        "correctness_reasoning": "The answer matches the expected answer precisely, correctly identifying that over 40% (more than 3.3 billion people) are at risk and confirming that travelers from non-malarious areas are being affected by modern travel."
       }
     },
     {
       "id": "gs22",
       "indexed": true,
       "question": "How many doses of diazepam is the maximum recommended within a 12-hour period for convulsions?",
-      "generated_answer": "The provided content does not state a maximum recommended number of doses of diazepam specifically within a 12-hour period; however, it does note that you should \"not give more than two doses in 12h.\"",
+      "generated_answer": "The provided guidelines state: \"Do not give more than two doses in 12h\" (9789241548526_eng.pdf, page 35).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "9789241548526_eng.pdf",
-          "page": 34
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 83
+          "page": 35
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 29
+          "page": 48
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 47
+          "page": 30
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 19
         },
         {
           "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 83
+          "page": 84
         }
       ],
-      "faithfulness_score": 0.5,
+      "faithfulness_score": 1.0,
       "relevance_score": 1.0,
       "correctness_score": 1.0,
       "judge_detail": {
-        "faithfulness_score": 0.5,
+        "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "The provided content does not state a maximum recommended number of doses of diazepam specifically within a 12-hour period",
-            "supported": false
-          },
-          {
-            "claim": "it does note that you should 'not give more than two doses in 12h.'",
+            "claim": "The provided guidelines state: 'Do not give more than two doses in 12h'",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question about the maximum recommended doses of diazepam within a 12-hour period, citing the exact relevant information from the context despite a slight contradiction in its introductory clause.",
+        "relevance_reasoning": "The answer directly and accurately addresses the question regarding the maximum recommended number of doses of diazepam within a 12-hour period.",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer correctly identifies the maximum recommended number of doses as not more than two doses in 12 hours, perfectly matching the expected answer."
+        "correctness_reasoning": "The answer correctly identifies that no more than two doses in 12 hours is recommended, matching the expected answer and the provided context."
       }
     },
     {
       "id": "gs23",
-      "indexed": false,
+      "indexed": true,
       "question": "What combination therapy pairs artesunate with pyronaridine, and is it listed in Nigeria's Essential Medicines List?",
-      "generated_answer": "The provided content does not contain information regarding a combination therapy of artesunate and pyronaridine, nor does it mention pyronaridine.",
+      "generated_answer": "The provided guidelines do not contain information regarding a combination therapy of artesunate with pyronaridine, nor do they state whether such a combination is listed in Nigeria's Essential Medicines List.",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 39
-        },
-        {
-          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-          "page": 6
+          "page": 3
         },
         {
           "source": "9789241548526_eng.pdf",
-          "page": 75
+          "page": 74
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 0
+          "page": 3
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
           "page": 2
+        },
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 7
         }
       ],
       "faithfulness_score": 1.0,
@@ -1317,25 +1298,25 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly addresses the question by honestly stating that the provided context does not contain the requested information about artesunate and pyronaridine.",
+        "relevance_reasoning": "The answer directly addresses the question by honestly declining to answer based on the fact that the required information was not found in the provided context.",
         "correctness_score": 0.5,
-        "correctness_reasoning": "The system honestly declined to answer because the information was not in the provided context, whereas the expected answer stated the information was present. Per instructions, this honest non-answer scores 0.5."
+        "correctness_reasoning": "The system correctly declined to answer because the information was absent from the retrieved context, even though the expected answer was present in the broader document space. Per instructions, an honest non-answer when info is missing scores 0.5."
       }
     },
     {
       "id": "gs24",
-      "indexed": false,
+      "indexed": true,
       "question": "What year and edition is the current Nigeria Essential Medicines List, and who published it?",
-      "generated_answer": "The current document is the 7th edition of the Nigeria Essential Medicines List, published in 2020 by the Federal Ministry of Health.",
+      "generated_answer": "The current Nigeria Essential Medicines List is the 7th edition, published in 2020 by the Federal Ministry of Health (Nigeria-Essential-Medicine-List-2020.pdf, page 1).",
       "n_chunks_retrieved": 5,
       "retrieved_sources": [
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 0
+          "page": 3
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 2
+          "page": 1
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
@@ -1343,7 +1324,7 @@
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-          "page": 3
+          "page": 4
         },
         {
           "source": "Nigeria-Essential-Medicine-List-2020.pdf",
@@ -1357,22 +1338,102 @@
         "faithfulness_score": 1.0,
         "faithfulness_claims": [
           {
-            "claim": "The current document is the 7th edition of the Nigeria Essential Medicines List",
+            "claim": "The current Nigeria Essential Medicines List is the 7th edition",
             "supported": true
           },
           {
-            "claim": "It was published in 2020",
+            "claim": "it was published in 2020",
             "supported": true
           },
           {
-            "claim": "It was published by the Federal Ministry of Health",
+            "claim": "it was published by the Federal Ministry of Health",
             "supported": true
           }
         ],
         "relevance_score": 1.0,
-        "relevance_reasoning": "The answer directly and fully addresses the question regarding the year, edition, and publisher of the Nigeria Essential Medicines List.",
+        "relevance_reasoning": "The answer directly and accurately addresses all parts of the question (year, edition, and publisher).",
         "correctness_score": 1.0,
-        "correctness_reasoning": "The answer completely matches the expected answer regarding the edition, year, and publisher."
+        "correctness_reasoning": "The answer matches the expected answer perfectly, stating it is the 7th edition, published in 2020 by the Federal Ministry of Health."
+      }
+    },
+    {
+      "id": "gs25",
+      "indexed": false,
+      "question": "What is the recommended dosing schedule for the RTS,S/AS01 malaria vaccine in children?",
+      "generated_answer": "The guidelines provided do not cover the recommended dosing schedule for the RTS,S/AS01 malaria vaccine.",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+          "page": 71
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 25
+        },
+        {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 13
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 45
+        },
+        {
+          "source": "9789241548526_eng.pdf",
+          "page": 25
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly and correctly addresses the question by stating that the provided guidelines do not contain the information, matching the expected behavior for missing information.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer correctly identifies that the information is not covered by the guidelines, which matches the expected answer."
+      }
+    },
+    {
+      "id": "gs26",
+      "indexed": false,
+      "question": "Can single-dose tafenoquine be used for the radical cure of P. vivax, and what G6PD testing does it require?",
+      "generated_answer": "The provided guidelines do not contain information regarding the use of tafenoquine for the radical cure of *P. vivax* or its associated G6PD testing requirements.",
+      "n_chunks_retrieved": 5,
+      "retrieved_sources": [
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 9
+        },
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 8
+        },
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 7
+        },
+        {
+          "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+          "page": 11
+        },
+        {
+          "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+          "page": 8
+        }
+      ],
+      "faithfulness_score": 1.0,
+      "relevance_score": 1.0,
+      "correctness_score": 1.0,
+      "judge_detail": {
+        "faithfulness_score": 1.0,
+        "faithfulness_claims": [],
+        "relevance_score": 1.0,
+        "relevance_reasoning": "The answer directly addresses the question by honestly declining, correctly noting that the provided guidelines do not contain information about tafenoquine.",
+        "correctness_score": 1.0,
+        "correctness_reasoning": "The answer correctly declines to answer because the information is not present in the context, matching the expected behavior."
       }
     }
   ]

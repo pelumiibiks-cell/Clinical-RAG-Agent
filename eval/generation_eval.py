@@ -35,7 +35,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config_mal import client
-from malaria_embed_query import search
+import rag_core
 from rag_core import prompt as build_prompt
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -45,12 +45,17 @@ RESULTS_PATH = BASE_DIR / "generation_results_malaria.json"
 GENERATION_MODEL = "gemini-3.1-flash-lite"  # matches Malator.py exactly
 JUDGE_MODEL = "gemini-3.5-flash-lite"  # different model generation, generous free quota
 
+# Flat pacing to stay under free-tier per-minute caps. 26 questions x 2 calls,
+# so this is the dominant cost of a run; the retry path below handles the
+# actual 429s.
+PACING_SECONDS = 2
+
 
 def call_model(model: str, contents: str, max_retries: int = 4) -> str:
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(model=model, contents=contents)
-            time.sleep(3)  # simple pacing to stay under free-tier requests-per-minute caps
+            time.sleep(PACING_SECONDS)
             return response.text
         except Exception as e:
             if "429" in str(e) and attempt < max_retries - 1:
@@ -121,12 +126,16 @@ Respond with ONLY raw JSON, no markdown fences, in this exact shape:
 
 
 def run_pipeline(question: str):
-    """Mirrors Malator.ask_question exactly, just called as a function
-    instead of over HTTP."""
-    retrieved = search(question)
-    final_prompt = build_prompt(question, retrieved)
-    answer = call_model(GENERATION_MODEL, final_prompt)
-    return answer, retrieved
+    """Runs the production path itself rather than reassembling it.
+
+    This used to call search() and build_prompt() and then generate_content()
+    by hand, which meant it silently stopped matching production the moment
+    rag_core grew a system instruction and a temperature -- it would have been
+    scoring a differently-configured model than the one users talk to.
+    """
+    answer, retrieved = rag_core.answer(question)
+    time.sleep(PACING_SECONDS)
+    return (answer if answer is not None else "No relevant content found."), retrieved
 
 
 def score_question(item: dict) -> dict:
