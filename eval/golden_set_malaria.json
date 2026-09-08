@@ -6,7 +6,17 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 8,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 8
+      },
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 7
+      }
+    ]
   },
   {
     "id": "gs02",
@@ -15,7 +25,13 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 8,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 8
+      }
+    ]
   },
   {
     "id": "gs03",
@@ -24,7 +40,13 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 10,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 10
+      }
+    ]
   },
   {
     "id": "gs04",
@@ -33,7 +55,13 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 10,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 10
+      }
+    ]
   },
   {
     "id": "gs05",
@@ -42,7 +70,13 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 12,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 12
+      }
+    ]
   },
   {
     "id": "gs06",
@@ -51,7 +85,17 @@
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
     "expected_page": 6,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 6
+      },
+      {
+        "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+        "page": 4
+      }
+    ]
   },
   {
     "id": "gs07",
@@ -60,7 +104,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 6,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 6
+      }
+    ]
   },
   {
     "id": "gs08",
@@ -69,7 +119,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 12,
     "indexed": true,
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 12
+      }
+    ]
   },
   {
     "id": "gs09",
@@ -78,7 +134,21 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 19,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 19
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 45
+      },
+      {
+        "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
+        "page": 69
+      }
+    ]
   },
   {
     "id": "gs10",
@@ -87,7 +157,29 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 19,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 19
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 44
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 75
+      },
+      {
+        "source": "WHO_Treatment_Guidelines_Olumense.pdf",
+        "page": 9
+      },
+      {
+        "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+        "page": 12
+      }
+    ]
   },
   {
     "id": "gs11",
@@ -96,7 +188,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 34,
     "indexed": true,
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 34
+      }
+    ]
   },
   {
     "id": "gs12",
@@ -105,7 +203,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 34,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 34
+      }
+    ]
   },
   {
     "id": "gs13",
@@ -114,7 +218,17 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 61,
     "indexed": true,
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 61
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 49
+      }
+    ]
   },
   {
     "id": "gs14",
@@ -123,7 +237,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 76,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 76
+      }
+    ]
   },
   {
     "id": "gs15",
@@ -132,7 +252,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 76,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 76
+      }
+    ]
   },
   {
     "id": "gs16",
@@ -141,7 +267,17 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 21,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 21
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 30
+      }
+    ]
   },
   {
     "id": "gs17",
@@ -150,7 +286,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 21,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 21
+      }
+    ]
   },
   {
     "id": "gs18",
@@ -159,7 +301,17 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 21,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 21
+      },
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 40
+      }
+    ]
   },
   {
     "id": "gs19",
@@ -168,7 +320,13 @@
     "expected_source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
     "expected_page": 2,
     "indexed": true,
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+        "page": 2
+      }
+    ]
   },
   {
     "id": "gs20",
@@ -177,7 +335,13 @@
     "expected_source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
     "expected_page": 2,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
+        "page": 2
+      }
+    ]
   },
   {
     "id": "gs21",
@@ -186,7 +350,13 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 6,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 6
+      }
+    ]
   },
   {
     "id": "gs22",
@@ -195,24 +365,70 @@
     "expected_source": "9789241548526_eng.pdf",
     "expected_page": 34,
     "indexed": true,
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "9789241548526_eng.pdf",
+        "page": 34
+      }
+    ]
   },
   {
     "id": "gs23",
     "question": "What combination therapy pairs artesunate with pyronaridine, and is it listed in Nigeria's Essential Medicines List?",
-    "expected_answer": "Yes — Artesunate + Pyronaridine is listed as an antimalarial combination in the Nigeria Essential Medicines List (2020, 7th edition).",
+    "expected_answer": "Yes - Artesunate + Pyronaridine tetraphosphate is listed as an antimalarial combination in the Nigeria Essential Medicines List (2020, 7th edition).",
     "expected_source": "Nigeria-Essential-Medicine-List-2020.pdf",
-    "expected_page": null,
-    "indexed": false,
-    "difficulty": "negative_control"
+    "expected_page": 16,
+    "indexed": true,
+    "difficulty": "medium",
+    "acceptable_locations": [
+      {
+        "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+        "page": 16
+      }
+    ],
+    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question."
   },
   {
     "id": "gs24",
     "question": "What year and edition is the current Nigeria Essential Medicines List, and who published it?",
     "expected_answer": "The 7th edition, published in 2020 by the Federal Ministry of Health.",
     "expected_source": "Nigeria-Essential-Medicine-List-2020.pdf",
+    "expected_page": 0,
+    "indexed": true,
+    "difficulty": "easy",
+    "acceptable_locations": [
+      {
+        "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+        "page": 0
+      },
+      {
+        "source": "Nigeria-Essential-Medicine-List-2020.pdf",
+        "page": 1
+      }
+    ],
+    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question."
+  },
+  {
+    "id": "gs25",
+    "question": "What is the recommended dosing schedule for the RTS,S/AS01 malaria vaccine in children?",
+    "expected_answer": "Not covered by the indexed guidelines. The system should decline rather than answer.",
+    "expected_source": null,
     "expected_page": null,
+    "acceptable_locations": [],
     "indexed": false,
-    "difficulty": "negative_control"
+    "difficulty": "negative_control",
+    "absence_verified": "0 occurrences of 'rts,s', 'rtss', 'mosquirix' or 'malaria vaccine' in the indexed corpus."
+  },
+  {
+    "id": "gs26",
+    "question": "Can single-dose tafenoquine be used for the radical cure of P. vivax, and what G6PD testing does it require?",
+    "expected_answer": "Not covered by the indexed guidelines. The system should decline rather than answer.",
+    "expected_source": null,
+    "expected_page": null,
+    "acceptable_locations": [],
+    "indexed": false,
+    "difficulty": "negative_control",
+    "absence_verified": "0 occurrences of 'tafenoquine' in the indexed corpus; primaquine radical cure IS covered, making this a near-miss trap."
   }
 ]

@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-import malaria_embed_query as mq  # reuses the already-loaded model/index/metadata
+import malaria_embed_query as mq  # lazy singletons: get_model()/get_index()/get_metadata()
 
 BASE_DIR = Path(__file__).resolve().parent
 GOLDEN_SET_PATH = BASE_DIR / "golden_set_malaria.json"
@@ -27,16 +27,16 @@ TOP_K = 5  # matches production; we score hit@1 / hit@3 / hit@5 from this one pu
 def raw_search(query: str, top_k: int = TOP_K):
     """Same embedding + FAISS call as production, but returns every
     candidate with its rank and score, with no threshold filtering."""
-    embedding = mq.model.encode(
+    embedding = mq.get_model().encode(
         [query], convert_to_numpy=True, normalize_embeddings=True
     )
-    distances, indices = mq.index.search(embedding, top_k)
+    distances, indices = mq.get_index().search(embedding, top_k)
 
     ranked = []
     for rank, (score, idx) in enumerate(zip(distances[0], indices[0]), start=1):
         if idx < 0:
             continue
-        entry = mq.metadata[int(idx)]
+        entry = mq.get_metadata()[int(idx)]
         ranked.append(
             {
                 "rank": rank,
@@ -49,11 +49,19 @@ def raw_search(query: str, top_k: int = TOP_K):
     return ranked
 
 
-def matches_expected(candidate: dict, expected_source: str, expected_page):
-    return (
-        candidate["source"] == expected_source
-        and candidate["page"] == expected_page
-    )
+def acceptable_keys(item: dict) -> set:
+    """Every (source, page) hand-verified to contain a sentence that answers the
+    question. A fact repeated on more than one page has more than one right
+    answer -- scoring against a single page counted a genuine hit as a miss
+    (gs10 and gs16 both did exactly that under the old single-page rule)."""
+    locs = item.get("acceptable_locations")
+    if not locs:
+        return {(item["expected_source"], item["expected_page"])}
+    return {(loc["source"], loc["page"]) for loc in locs}
+
+
+def matches_expected(candidate: dict, accepted: set) -> bool:
+    return (candidate["source"], candidate["page"]) in accepted
 
 
 def score_question(item: dict) -> dict:
@@ -75,12 +83,9 @@ def score_question(item: dict) -> dict:
             "ranked": ranked,
         }
 
+    accepted = acceptable_keys(item)
     hit_rank = next(
-        (
-            c["rank"]
-            for c in ranked
-            if matches_expected(c, item["expected_source"], item["expected_page"])
-        ),
+        (c["rank"] for c in ranked if matches_expected(c, accepted)),
         None,
     )
     threshold_would_pass = (
@@ -91,6 +96,8 @@ def score_question(item: dict) -> dict:
         "id": item["id"],
         "type": "positive",
         "difficulty": item["difficulty"],
+        "question": item["question"],
+        "n_acceptable_locations": len(accepted),
         "hit_rank": hit_rank,  # None = not in top-k at all
         "hit_at_1": hit_rank == 1,
         "hit_at_3": hit_rank is not None and hit_rank <= 3,
@@ -103,7 +110,7 @@ def score_question(item: dict) -> dict:
 
 
 def main():
-    golden_set = json.loads(GOLDEN_SET_PATH.read_text())
+    golden_set = json.loads(GOLDEN_SET_PATH.read_text(encoding="utf-8"))
     results = [score_question(item) for item in golden_set]
 
     positives = [r for r in results if r["type"] == "positive"]
@@ -131,7 +138,7 @@ def main():
     }
 
     output = {"summary": summary, "details": results}
-    RESULTS_PATH.write_text(json.dumps(output, indent=2))
+    RESULTS_PATH.write_text(json.dumps(output, indent=2), encoding="utf-8")
 
     print(json.dumps(summary, indent=2))
     print(f"\nFull per-question results written to {RESULTS_PATH}")

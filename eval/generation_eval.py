@@ -36,7 +36,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config_mal import client
 from malaria_embed_query import search
-from Malator import prompt as build_prompt
+from rag_core import prompt as build_prompt
 
 BASE_DIR = Path(__file__).resolve().parent
 GOLDEN_SET_PATH = BASE_DIR / "golden_set_malaria.json"
