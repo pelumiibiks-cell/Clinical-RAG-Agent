@@ -43,6 +43,7 @@ def raw_search(query: str, top_k: int = TOP_K):
                 "score": float(score),
                 "source": entry.get("Source"),
                 "page": entry.get("Page Number"),
+                "page_end": entry.get("Page End", entry.get("Page Number")),
                 "passes_threshold": float(score) > mq.SIMILARITY_THRESHOLD,
             }
         )
@@ -61,7 +62,15 @@ def acceptable_keys(item: dict) -> set:
 
 
 def matches_expected(candidate: dict, accepted: set) -> bool:
-    return (candidate["source"], candidate["page"]) in accepted
+    """A chunk can span a page break, so it is a hit if ANY page it covers is
+    an accepted location -- attributing it only to its first page counted real
+    hits as misses."""
+    start = candidate["page"]
+    end = candidate.get("page_end", start)
+    return any(
+        src == candidate["source"] and start <= pg <= end
+        for src, pg in accepted
+    )
 
 
 def score_question(item: dict) -> dict:

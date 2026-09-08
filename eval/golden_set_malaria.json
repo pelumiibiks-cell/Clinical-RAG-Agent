@@ -4,410 +4,434 @@
     "question": "What is the recommended first-line treatment for uncomplicated falciparum malaria?",
     "expected_answer": "Artemisinin-based combination therapies (ACTs) are recommended in preference to non-artemisinin combinations such as sulfadoxine-pyrimethamine + amodiaquine.",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 8,
+    "expected_page": 9,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 8
+        "page": 9
       },
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 7
+        "page": 8
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs02",
     "question": "How many days of treatment should an ACT course include at minimum?",
     "expected_answer": "At least 3 days of treatment with an artemisinin derivative.",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 8,
+    "expected_page": 9,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 8
+        "page": 9
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs03",
     "question": "What is the treatment of choice for chloroquine-sensitive P. vivax infections?",
     "expected_answer": "Chloroquine combined with primaquine.",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 10,
+    "expected_page": 11,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 10
+        "page": 11
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs04",
     "question": "What should be used to treat P. vivax malaria in areas with chloroquine-resistant strains?",
     "expected_answer": "ACTs with partner medicines that have long half-lives.",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 10,
+    "expected_page": 11,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 10
+        "page": 11
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs05",
     "question": "Name two oral combination options listed for treating severe or complicated malaria cases mentioned alongside atovaquone-proguanil.",
     "expected_answer": "Artemether + lumefantrine, and dihydroartemisinin + piperaquine (also quinine + doxycycline or clindamycin).",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 12,
+    "expected_page": 13,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 12
+        "page": 13
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs06",
     "question": "What diagnostic step is recommended before starting malaria treatment in all suspected patients?",
     "expected_answer": "Prompt parasitological confirmation by microscopy or rapid diagnostic tests (RDTs) before treatment starts.",
     "expected_source": "WHO_Treatment_Guidelines_Olumense.pdf",
-    "expected_page": 6,
+    "expected_page": 7,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 6
+        "page": 7
       },
       {
         "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-        "page": 4
+        "page": 5
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs07",
     "question": "What proportion of the world's population is at risk of malaria according to the WHO guidelines?",
     "expected_answer": "Over 40% of the world's population — more than 3.3 billion people.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 6,
+    "expected_page": 7,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 6
+        "page": 7
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs08",
     "question": "How is a 'low transmission' malaria area defined in terms of P. falciparum parasitaemia prevalence?",
     "expected_answer": "A hypoendemic area where P. falciparum parasitaemia prevalence is 10% or less during most of the year among children aged 2-9 years.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 12,
+    "expected_page": 13,
     "indexed": true,
     "difficulty": "hard",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 12
+        "page": 13
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs09",
     "question": "How should artemisinin suppository formulations be used in severe malaria treatment?",
     "expected_answer": "As pre-referral treatment where parenteral therapy with artesunate or quinine is not possible or feasible.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 19,
+    "expected_page": 20,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 19
+        "page": 20
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 45
+        "page": 46
       },
       {
         "source": "PNG_D1_Standard-Treatment-Guidelines-for-Common-Illness-of-Adults-in-PNG.pdf",
-        "page": 69
+        "page": 70
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs10",
     "question": "For how long should parenteral antimalarial agents be given at minimum in treating severe malaria?",
     "expected_answer": "A minimum of 24 hours, even if the patient can tolerate oral medication earlier.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 19,
+    "expected_page": 20,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 19
+        "page": 20
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 44
+        "page": 45
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 75
+        "page": 76
       },
       {
         "source": "WHO_Treatment_Guidelines_Olumense.pdf",
-        "page": 9
+        "page": 10
       },
       {
         "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-        "page": 12
+        "page": 13
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs11",
     "question": "What should be checked if convulsions persist after two doses of diazepam?",
     "expected_answer": "Check for respiratory depression before giving a loading dose of phenytoin or phenobarbitone if it's the only available option.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 34,
+    "expected_page": 35,
     "indexed": true,
     "difficulty": "hard",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 34
+        "page": 35
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs12",
     "question": "Is diazepam well absorbed when given intramuscularly?",
     "expected_answer": "No — diazepam is poorly absorbed intramuscularly and should be given intravenously or rectally instead.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 34,
+    "expected_page": 35,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 34
+        "page": 35
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs13",
     "question": "At what haemoglobin or haematocrit threshold should a blood transfusion be given in a fluid-overloaded postpartum patient?",
     "expected_answer": "If haematocrit falls below 20% or haemoglobin falls below 7 g/dl, transfuse screened compatible blood over 6 hours with furosemide 20mg.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 61,
+    "expected_page": 62,
     "indexed": true,
     "difficulty": "hard",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 61
+        "page": 62
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 49
+        "page": 50
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs14",
     "question": "What formulations is artemether available in?",
     "expected_answer": "Oral (in combination treatment), rectal, and intramuscular formulations.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 76,
+    "expected_page": 77,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 76
+        "page": 77
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs15",
     "question": "Why might the intramuscular formulation of artemether be absorbed inconsistently in severely ill patients?",
     "expected_answer": "Because its parenteral formulation is oil-based and may be inadequately or erratically absorbed after intramuscular injection in severely ill patients.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 76,
+    "expected_page": 77,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 76
+        "page": 77
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs16",
     "question": "What antipyretic is recommended for reducing high body temperatures above 39°C in malaria patients?",
     "expected_answer": "Paracetamol, along with tepid sponging and fanning for comfort.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 21,
+    "expected_page": 22,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 21
+        "page": 22
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 30
+        "page": 31
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs17",
     "question": "What drugs should be avoided in malaria patients because they increase the risk of gastrointestinal bleeding?",
     "expected_answer": "Aspirin and corticosteroids.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 21,
+    "expected_page": 22,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 21
+        "page": 22
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs18",
     "question": "What lab values should be regularly monitored in a patient with impaired perfusion from severe malaria?",
     "expected_answer": "Erythrocyte volume fraction (haematocrit) or haemoglobin concentration, glucose, urea or creatinine, and electrolytes.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 21,
+    "expected_page": 22,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 21
+        "page": 22
       },
       {
         "source": "9789241548526_eng.pdf",
-        "page": 40
+        "page": 41
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs19",
     "question": "Within what time frame should all malaria cases be notified, according to the pocket manual for Oman?",
     "expected_answer": "Within 24 hours.",
     "expected_source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-    "expected_page": 2,
+    "expected_page": 3,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-        "page": 2
+        "page": 3
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs20",
     "question": "Is management of malaria cases free of charge in Oman's health system, per the pocket manual?",
     "expected_answer": "Yes, management of malaria cases is free of charge, though antimalarial medicine availability is limited to government health facilities.",
     "expected_source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-    "expected_page": 2,
+    "expected_page": 3,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "omn-ch-33-01-operationalguidance-eng-pocket-manual-for-the-diagnosis-and-treatment-of-malaria.pdf",
-        "page": 2
+        "page": 3
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs21",
     "question": "What percentage of the world's population at risk for malaria live in countries with on-going transmission, and are large numbers of travelers from non-endemic areas also being affected?",
     "expected_answer": "More than 3.3 billion people (over 40% of world population) are at varying risk; yes, rapid travel is also causing infections among people from non-malarious areas.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 6,
+    "expected_page": 7,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 6
+        "page": 7
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs22",
     "question": "How many doses of diazepam is the maximum recommended within a 12-hour period for convulsions?",
     "expected_answer": "No more than two doses in 12 hours.",
     "expected_source": "9789241548526_eng.pdf",
-    "expected_page": 34,
+    "expected_page": 35,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "9789241548526_eng.pdf",
-        "page": 34
+        "page": 35
       }
-    ]
+    ],
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs23",
     "question": "What combination therapy pairs artesunate with pyronaridine, and is it listed in Nigeria's Essential Medicines List?",
     "expected_answer": "Yes - Artesunate + Pyronaridine tetraphosphate is listed as an antimalarial combination in the Nigeria Essential Medicines List (2020, 7th edition).",
     "expected_source": "Nigeria-Essential-Medicine-List-2020.pdf",
-    "expected_page": 16,
+    "expected_page": 17,
     "indexed": true,
     "difficulty": "medium",
     "acceptable_locations": [
       {
         "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-        "page": 16
+        "page": 17
       }
     ],
-    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question."
+    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question.",
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs24",
     "question": "What year and edition is the current Nigeria Essential Medicines List, and who published it?",
     "expected_answer": "The 7th edition, published in 2020 by the Federal Ministry of Health.",
     "expected_source": "Nigeria-Essential-Medicine-List-2020.pdf",
-    "expected_page": 0,
+    "expected_page": 1,
     "indexed": true,
     "difficulty": "easy",
     "acceptable_locations": [
       {
         "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-        "page": 0
+        "page": 1
       },
       {
         "source": "Nigeria-Essential-Medicine-List-2020.pdf",
-        "page": 1
+        "page": 2
       }
     ],
-    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question."
+    "reclassified_note": "Was a negative control on the assumption this PDF was unindexed. It now has 367 chunks in the index and the system answers it correctly, so scoring it as a false positive was inverted. Reclassified as a positive question.",
+    "page_indexing": "1-indexed, matching what a PDF viewer shows"
   },
   {
     "id": "gs25",
