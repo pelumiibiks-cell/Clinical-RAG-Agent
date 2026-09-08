@@ -15,14 +15,14 @@
           "supported": false
         },
         {
-          "claim": "tepid sponging is used along with it",
-          "supported": true
+          "claim": "tepid sponging is recommended for reducing high body temperatures along with ibuprofen",
+          "supported": false
         }
       ],
       "relevance_score": 1.0,
-      "relevance_reasoning": "The answer directly addresses the question by naming an antipyretic and comfort measures for temperatures above 39C, even though the factual content is incorrect.",
+      "relevance_reasoning": "The answer directly addresses the question by naming an antipyretic and mentioning comfort measures, fully engaging with what was asked despite containing incorrect information based on the context.",
       "correctness_score": 0.0,
-      "correctness_reasoning": "The answer incorrectly identifies ibuprofen as the recommended antipyretic instead of paracetamol as stated in the expected answer."
+      "correctness_reasoning": "The answer recommends ibuprofen, whereas the expected answer (and the context) specifies paracetamol."
     }
   },
   {
@@ -30,25 +30,29 @@
     "targets": "faithfulness (invented fact not in context at all)",
     "prediction": "faithfulness should drop -- 'artesunate + paracetamol' is not one of the listed ACTs, it's fabricated",
     "bad_answer": "The recommended first-line treatment is artesunate combined with paracetamol, which is one of the standard ACT combinations for uncomplicated falciparum malaria.",
-    "faithfulness_score": 0.0,
+    "faithfulness_score": 0.33,
     "relevance_score": 1.0,
     "correctness_score": 0.0,
     "judge_detail": {
-      "faithfulness_score": 0.0,
+      "faithfulness_score": 0.33,
       "faithfulness_claims": [
         {
           "claim": "The recommended first-line treatment is artesunate combined with paracetamol",
           "supported": false
         },
         {
-          "claim": "paracetamol is one of the standard ACT combinations for uncomplicated falciparum malaria",
+          "claim": "paracetamol is one of the standard ACT combinations",
           "supported": false
+        },
+        {
+          "claim": "treatment is for uncomplicated falciparum malaria",
+          "supported": true
         }
       ],
       "relevance_score": 1.0,
-      "relevance_reasoning": "The answer directly addresses the question by providing a specific treatment recommendation for uncomplicated falciparum malaria, even though the content is factually incorrect according to the context.",
+      "relevance_reasoning": "The answer directly addresses the question about the recommended treatment for uncomplicated falciparum malaria by providing a specific drug combination, even though the factual content is incorrect.",
       "correctness_score": 0.0,
-      "correctness_reasoning": "The answer claims that artesunate combined with paracetamol is a standard ACT combination, which is factually incorrect and not present in the expected answer or context."
+      "correctness_reasoning": "The answer incorrectly states that artesunate combined with paracetamol is a recommended ACT combination, whereas the context and medical reality require other combinations like artemether + lumefantrine, artesunate + amodiaquine, etc."
     }
   },
   {
@@ -56,25 +60,25 @@
     "targets": "relevance (fails to address a clearly answerable question)",
     "prediction": "relevance should drop well below 1.0 -- this is a real, answerable question with the answer sitting right in the context, and the response just doesn't address it",
     "bad_answer": "Malaria is a serious disease that affects millions of people worldwide, and prevention through bed nets and vector control is very important for reducing transmission.",
-    "faithfulness_score": 0.0,
+    "faithfulness_score": 1.0,
     "relevance_score": 0.0,
     "correctness_score": 0.0,
     "judge_detail": {
-      "faithfulness_score": 0.0,
+      "faithfulness_score": 1.0,
       "faithfulness_claims": [
         {
           "claim": "Malaria is a serious disease that affects millions of people worldwide",
-          "supported": false
+          "supported": true
         },
         {
-          "claim": "prevention through bed nets and vector control is very important for reducing transmission",
-          "supported": false
+          "claim": "Prevention through bed nets and vector control is very important for reducing transmission",
+          "supported": true
         }
       ],
       "relevance_score": 0.0,
-      "relevance_reasoning": "The answer discusses general information about malaria and prevention methods (bed nets and vector control), entirely failing to address the specific question about recommended diagnostic steps before starting treatment.",
+      "relevance_reasoning": "The question asks for the recommended diagnostic step before starting malaria treatment. The answer completely ignores this and discusses malaria prevention and impact instead.",
       "correctness_score": 0.0,
-      "correctness_reasoning": "The answer completely misses the expected answer regarding parasitological confirmation by microscopy or RDTs, providing irrelevant information instead."
+      "correctness_reasoning": "The answer fails to provide the expected answer regarding parasitological confirmation by microscopy or RDTs before treatment, offering irrelevant information instead."
     }
   },
   {
@@ -94,9 +98,9 @@
         }
       ],
       "relevance_score": 1.0,
-      "relevance_reasoning": "The answer directly addresses the question by stating a specific duration for how long parenteral antimalarial agents should be given.",
+      "relevance_reasoning": "The answer directly addresses the question by stating a specific minimum duration for parenteral antimalarial treatment, matching the prompt's inquiry.",
       "correctness_score": 0.0,
-      "correctness_reasoning": "The answer states a minimum of 6 hours, whereas the expected answer is a minimum of 24 hours."
+      "correctness_reasoning": "The answer states a minimum of 6 hours, which directly contradicts the expected answer (and the context) of a minimum of 24 hours."
     }
   },
   {
@@ -120,9 +124,9 @@
         }
       ],
       "relevance_score": 1.0,
-      "relevance_reasoning": "The answer directly addresses the question by identifying the drugs to be avoided (aspirin and corticosteroids), even though it includes extra unprompted information.",
+      "relevance_reasoning": "The answer directly addresses the question by naming aspirin and corticosteroids as the drugs to avoid, even though it includes extra ungrounded information.",
       "correctness_score": 0.5,
-      "correctness_reasoning": "The answer correctly identifies aspirin and corticosteroids as expected, but introduces hallucinated/unsupported medical advice regarding prophylactic antibiotics not present in the expected answer or context."
+      "correctness_reasoning": "The answer correctly identifies aspirin and corticosteroids as expected, but includes incorrect/unsupported hallucinated medical advice regarding prophylactic antibiotics."
     }
   }
 ]
